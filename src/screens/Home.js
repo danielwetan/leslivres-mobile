@@ -1,12 +1,16 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {Text} from 'react-native';
+import Search from '../components/search';
+import Bottom from '../components/menu/Bottom';
+import TopMenu from '../components/menu/Top';
+
+import {ThemeProvider, Avatar} from 'react-native-elements';
 
 const Home = () => {
   return (
     <>
-      <View>
-        <Text>This is Home Screen</Text>
-      </View>
+      <TopMenu />
+      <Search />
     </>
   );
 };

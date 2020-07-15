@@ -1,0 +1,7 @@
+<TopMenu />
+<SearchBar />
+<PopularBook /> // slider
+<Author />
+<Genre />
+<BookList/>
+<BottomMenu/>

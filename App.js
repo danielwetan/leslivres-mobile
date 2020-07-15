@@ -1,12 +1,13 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import Home from './src/screens/Home';
+import {ThemeProvider} from 'react-native-elements';
 
 const App = () => {
   return (
     <>
-      <View>
-        <Text>Hello Daniel!</Text>
-      </View>
+      <ThemeProvider>
+        <Home />
+      </ThemeProvider>
     </>
   );
 };
