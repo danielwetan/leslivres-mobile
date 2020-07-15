@@ -1,14 +1,14 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const GenreList = () => {
+const Books = () => {
   return (
     <>
       <View>
-        <Text>This is GenreList</Text>
+        <Text>This is BookList</Text>
       </View>
     </>
   );
 };
 
-export default GenreList;
+export default Books;
