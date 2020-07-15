@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {Header, Text, Button} from 'react-native-elements';
+import {Header} from 'react-native-elements';
 
 const TopMenu = () => {
   return (
