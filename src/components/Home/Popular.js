@@ -39,6 +39,8 @@ const Popular = () => {
                 marginTop: 10,
                 width: 130,
                 height: 200,
+                borderRadius: 10,
+                overflow: 'hidden',
               }}
             />
             <Text
@@ -70,6 +72,8 @@ const Popular = () => {
                 marginTop: 10,
                 width: 130,
                 height: 200,
+                borderRadius: 10,
+                overflow: 'hidden',
               }}
             />
             <Text
@@ -101,6 +105,8 @@ const Popular = () => {
                 marginTop: 10,
                 width: 130,
                 height: 200,
+                borderRadius: 10,
+                overflow: 'hidden',
               }}
             />
             <Text
