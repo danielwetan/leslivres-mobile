@@ -12,7 +12,7 @@ const TopMenu = () => {
         }}>
         <Header
           leftComponent={{
-            icon: 'apps',
+            icon: 'filter-list',
             color: '#111',
             size: 30,
           }}

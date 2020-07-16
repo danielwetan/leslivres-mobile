@@ -1,8 +1,9 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {SearchBar} from 'react-native-elements';
-
 import {View} from 'react-native';
+
+import style from '../../styles/Public/Search';
 
 export default class App extends React.Component {
   state = {
@@ -17,30 +18,15 @@ export default class App extends React.Component {
     const {search} = this.state;
 
     return (
-      <View
-        style={{
-          marginLeft: 15,
-          marginRight: 15,
-        }}>
+      <View style={style.container}>
         <SearchBar
           placeholder="What are you looking for?"
           onChangeText={this.updateSearch}
           value={search}
-          containerStyle={{
-            backgroundColor: '#fff',
-            borderTopColor: '#fff',
-            borderBottomColor: '#fff',
-          }}
-          inputContainerStyle={{
-            backgroundColor: 'lightgray',
-          }}
-          inputStyle={{
-            fontSize: 15,
-            fontFamily: 'Quicksand-Bold',
-          }}
-          searchIcon={{
-            size: 25,
-          }}
+          containerStyle={style.searchBarContainer}
+          inputContainerStyle={style.searchBarInputContainer}
+          inputStyle={style.searchBarInput}
+          searchIcon={style.searchIcon}
         />
       </View>
     );
