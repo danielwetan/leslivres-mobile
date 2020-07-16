@@ -18,8 +18,9 @@ const Popular = () => {
         }}>
         <Text
           style={{
-            fontSize: 23,
-            fontWeight: 'bold',
+            fontSize: 22,
+            fontFamily: 'Quicksand-Bold',
+            color: '#373D3F',
           }}>
           Popular
         </Text>
@@ -47,15 +48,16 @@ const Popular = () => {
               style={{
                 marginTop: 10,
                 fontSize: 15,
-                fontWeight: 'bold',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               Harry Potter
             </Text>
             <Text
               style={{
                 fontSize: 12,
-                fontWeight: 'bold',
-                color: 'gray',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               J.K. Rowling
             </Text>
@@ -80,15 +82,16 @@ const Popular = () => {
               style={{
                 marginTop: 10,
                 fontSize: 15,
-                fontWeight: 'bold',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               Harry Potter
             </Text>
             <Text
               style={{
                 fontSize: 12,
-                fontWeight: 'bold',
-                color: 'gray',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               J.K. Rowling
             </Text>
@@ -113,15 +116,16 @@ const Popular = () => {
               style={{
                 marginTop: 10,
                 fontSize: 15,
-                fontWeight: 'bold',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               Catching Fire
             </Text>
             <Text
               style={{
                 fontSize: 12,
-                fontWeight: 'bold',
-                color: 'gray',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               Suzanne Colins
             </Text>

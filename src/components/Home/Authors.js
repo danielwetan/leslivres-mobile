@@ -18,7 +18,8 @@ const AuthorList = () => {
         <Text
           style={{
             fontSize: 22,
-            fontWeight: 'bold',
+            fontFamily: 'Quicksand-Bold',
+            color: '#373D3F',
           }}>
           Authors
         </Text>
@@ -44,7 +45,8 @@ const AuthorList = () => {
               style={{
                 marginTop: 10,
                 fontSize: 12,
-                fontWeight: 'bold',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               J.K. Rowling
             </Text>
@@ -68,7 +70,8 @@ const AuthorList = () => {
               style={{
                 marginTop: 10,
                 fontSize: 12,
-                fontWeight: 'bold',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               Barrack Obama
             </Text>
@@ -92,7 +95,8 @@ const AuthorList = () => {
               style={{
                 marginTop: 10,
                 fontSize: 12,
-                fontWeight: 'bold',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               Suzanne Collins
             </Text>
@@ -116,7 +120,8 @@ const AuthorList = () => {
               style={{
                 marginTop: 10,
                 fontSize: 12,
-                fontWeight: 'bold',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               Nelson Mandela
             </Text>
@@ -141,7 +146,8 @@ const AuthorList = () => {
               style={{
                 marginTop: 10,
                 fontSize: 12,
-                fontWeight: 'bold',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               Nelson Mandela
             </Text>

@@ -14,7 +14,8 @@ const Genres = () => {
         <Text
           style={{
             fontSize: 22,
-            fontWeight: 'bold',
+            fontFamily: 'Quicksand-Bold',
+            color: '#373D3F',
           }}>
           Genres
         </Text>

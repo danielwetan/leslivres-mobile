@@ -18,7 +18,11 @@ const TopMenu = () => {
           }}
           centerComponent={{
             text: 'LesLivres',
-            style: {color: '#111', fontSize: 22, fontWeight: 'bold'},
+            style: {
+              fontSize: 22,
+              fontFamily: 'Quicksand-Bold',
+              color: '#373D3F',
+            },
           }}
           rightComponent={{
             icon: 'account-circle',

@@ -18,8 +18,9 @@ const Books = () => {
         }}>
         <Text
           style={{
-            fontSize: 23,
-            fontWeight: 'bold',
+            fontSize: 22,
+            fontFamily: 'Quicksand-Bold',
+            color: '#373D3F',
           }}>
           Books
         </Text>
@@ -47,15 +48,16 @@ const Books = () => {
               style={{
                 marginTop: 10,
                 fontSize: 15,
-                fontWeight: 'bold',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               Harry Potter
             </Text>
             <Text
               style={{
                 fontSize: 12,
-                fontWeight: 'bold',
-                color: 'gray',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               J.K. Rowling
             </Text>
@@ -64,7 +66,7 @@ const Books = () => {
             style={{
               justifyContent: 'center',
               alignItems: 'center',
-              marginLeft: 33,
+              marginLeft: 30,
             }}>
             <Image
               source={img1}
@@ -80,15 +82,16 @@ const Books = () => {
               style={{
                 marginTop: 10,
                 fontSize: 15,
-                fontWeight: 'bold',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               Harry Potter
             </Text>
             <Text
               style={{
                 fontSize: 12,
-                fontWeight: 'bold',
-                color: 'gray',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               J.K. Rowling
             </Text>
@@ -117,15 +120,16 @@ const Books = () => {
               style={{
                 marginTop: 10,
                 fontSize: 15,
-                fontWeight: 'bold',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               Harry Potter
             </Text>
             <Text
               style={{
                 fontSize: 12,
-                fontWeight: 'bold',
-                color: 'gray',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               J.K. Rowling
             </Text>
@@ -134,7 +138,7 @@ const Books = () => {
             style={{
               justifyContent: 'center',
               alignItems: 'center',
-              marginLeft: 33,
+              marginLeft: 30,
             }}>
             <Image
               source={img1}
@@ -150,235 +154,21 @@ const Books = () => {
               style={{
                 marginTop: 10,
                 fontSize: 15,
-                fontWeight: 'bold',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               Harry Potter
             </Text>
             <Text
               style={{
                 fontSize: 12,
-                fontWeight: 'bold',
-                color: 'gray',
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F',
               }}>
               J.K. Rowling
             </Text>
           </View>
         </View>
- 
-        <View
-          style={{
-            flexDirection: 'row',
-          }}>
-          <View
-            style={{
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}>
-            <Image
-              source={img}
-              style={{
-                marginTop: 10,
-                width: 160,
-                height: 240,
-                borderRadius: 10,
-                overflow: 'hidden',
-              }}
-            />
-            <Text
-              style={{
-                marginTop: 10,
-                fontSize: 15,
-                fontWeight: 'bold',
-              }}>
-              Harry Potter
-            </Text>
-            <Text
-              style={{
-                fontSize: 12,
-                fontWeight: 'bold',
-                color: 'gray',
-              }}>
-              J.K. Rowling
-            </Text>
-          </View>
-          <View
-            style={{
-              justifyContent: 'center',
-              alignItems: 'center',
-              marginLeft: 33,
-            }}>
-            <Image
-              source={img1}
-              style={{
-                marginTop: 10,
-                width: 160,
-                height: 240,
-                borderRadius: 10,
-                overflow: 'hidden',
-              }}
-            />
-            <Text
-              style={{
-                marginTop: 10,
-                fontSize: 15,
-                fontWeight: 'bold',
-              }}>
-              Harry Potter
-            </Text>
-            <Text
-              style={{
-                fontSize: 12,
-                fontWeight: 'bold',
-                color: 'gray',
-              }}>
-              J.K. Rowling
-            </Text>
-          </View>
-        </View>
- 
-        <View
-          style={{
-            flexDirection: 'row',
-          }}>
-          <View
-            style={{
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}>
-            <Image
-              source={img}
-              style={{
-                marginTop: 10,
-                width: 160,
-                height: 240,
-                borderRadius: 10,
-                overflow: 'hidden',
-              }}
-            />
-            <Text
-              style={{
-                marginTop: 10,
-                fontSize: 15,
-                fontWeight: 'bold',
-              }}>
-              Harry Potter
-            </Text>
-            <Text
-              style={{
-                fontSize: 12,
-                fontWeight: 'bold',
-                color: 'gray',
-              }}>
-              J.K. Rowling
-            </Text>
-          </View>
-          <View
-            style={{
-              justifyContent: 'center',
-              alignItems: 'center',
-              marginLeft: 33,
-            }}>
-            <Image
-              source={img1}
-              style={{
-                marginTop: 10,
-                width: 160,
-                height: 240,
-                borderRadius: 10,
-                overflow: 'hidden',
-              }}
-            />
-            <Text
-              style={{
-                marginTop: 10,
-                fontSize: 15,
-                fontWeight: 'bold',
-              }}>
-              Harry Potter
-            </Text>
-            <Text
-              style={{
-                fontSize: 12,
-                fontWeight: 'bold',
-                color: 'gray',
-              }}>
-              J.K. Rowling
-            </Text>
-          </View>
-        </View>
- 
-        <View
-          style={{
-            flexDirection: 'row',
-          }}>
-          <View
-            style={{
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}>
-            <Image
-              source={img}
-              style={{
-                marginTop: 10,
-                width: 160,
-                height: 240,
-                borderRadius: 10,
-                overflow: 'hidden',
-              }}
-            />
-            <Text
-              style={{
-                marginTop: 10,
-                fontSize: 15,
-                fontWeight: 'bold',
-              }}>
-              Harry Potter
-            </Text>
-            <Text
-              style={{
-                fontSize: 12,
-                fontWeight: 'bold',
-                color: 'gray',
-              }}>
-              J.K. Rowling
-            </Text>
-          </View>
-          <View
-            style={{
-              justifyContent: 'center',
-              alignItems: 'center',
-              marginLeft: 33,
-            }}>
-            <Image
-              source={img1}
-              style={{
-                marginTop: 10,
-                width: 160,
-                height: 240,
-                borderRadius: 10,
-                overflow: 'hidden',
-              }}
-            />
-            <Text
-              style={{
-                marginTop: 10,
-                fontSize: 15,
-                fontWeight: 'bold',
-              }}>
-              Harry Potter
-            </Text>
-            <Text
-              style={{
-                fontSize: 12,
-                fontWeight: 'bold',
-                color: 'gray',
-              }}>
-              J.K. Rowling
-            </Text>
-          </View>
-        </View>
- 
-
       </View>
     </>
   );
