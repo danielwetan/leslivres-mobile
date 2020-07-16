@@ -1,6 +1,8 @@
 import React from 'react';
 import {SearchBar} from 'react-native-elements';
 
+import {View} from 'react-native';
+
 export default class App extends React.Component {
   state = {
     search: '',
@@ -14,6 +16,10 @@ export default class App extends React.Component {
     const {search} = this.state;
 
     return (
+      <View style={{
+        marginLeft: 15,
+        marginRight: 15,
+      }}>
       <SearchBar
         placeholder="What are you looking for?"
         onChangeText={this.updateSearch}
@@ -33,6 +39,7 @@ export default class App extends React.Component {
           size: 25,
         }}
       />
+      </View>
     );
   }
 }

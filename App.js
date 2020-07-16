@@ -7,14 +7,15 @@ import Home from './src/screens/Home';
 // import Login from './src/screens/Login';
 // import Profile from './src/screens/Profile';
 // import Register from './src/screens/Register';
+import {SafeAreaView, ScrollView} from 'react-native';
 
 const App = () => {
   return (
-    <>
-      <ThemeProvider>
+    <SafeAreaView>
+      <ScrollView>
         <Home />
-      </ThemeProvider>
-    </>
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 

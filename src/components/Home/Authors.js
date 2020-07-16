@@ -12,8 +12,8 @@ const AuthorList = () => {
       <View
         style={{
           marginTop: 15,
-          marginLeft: 10,
-          marginRight: 10,
+          marginLeft: 20,
+          marginRight: 20,
         }}>
         <Text
           style={{
@@ -34,8 +34,8 @@ const AuthorList = () => {
               source={img1}
               style={{
                 marginTop: 10,
-                width: 80,
-                height: 80,
+                width: 70,
+                height: 70,
                 borderRadius: 50,
                 overflow: 'hidden',
               }}
@@ -51,15 +51,15 @@ const AuthorList = () => {
           </View>
           <View
             style={{
-              marginLeft: 25,
+              marginLeft: 10,
               alignItems: 'center',
             }}>
             <Image
               source={img}
               style={{
                 marginTop: 10,
-                width: 80,
-                height: 80,
+                width: 70,
+                height: 70,
                 borderRadius: 50,
                 overflow: 'hidden',
               }}
@@ -75,15 +75,15 @@ const AuthorList = () => {
           </View>
           <View
             style={{
-              marginLeft: 25,
+              marginLeft: 5,
               alignItems: 'center',
             }}>
             <Image
               source={img2}
               style={{
                 marginTop: 10,
-                width: 80,
-                height: 80,
+                width: 70,
+                height: 70,
                 borderRadius: 50,
                 overflow: 'hidden',
               }}
@@ -99,15 +99,40 @@ const AuthorList = () => {
           </View>
           <View
             style={{
-              marginLeft: 25,
+              marginLeft: 5,
               alignItems: 'center',
             }}>
             <Image
               source={img}
               style={{
                 marginTop: 10,
-                width: 80,
-                height: 80,
+                width: 70,
+                height: 70,
+                borderRadius: 50,
+                overflow: 'hidden',
+              }}
+            />
+            <Text
+              style={{
+                marginTop: 10,
+                fontSize: 12,
+                fontWeight: 'bold',
+              }}>
+              Nelson Mandela
+            </Text>
+          </View>
+
+          <View
+            style={{
+              marginLeft: 10,
+              alignItems: 'center',
+            }}>
+            <Image
+              source={img}
+              style={{
+                marginTop: 10,
+                width: 70,
+                height: 70,
                 borderRadius: 50,
                 overflow: 'hidden',
               }}
