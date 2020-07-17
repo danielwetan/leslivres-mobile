@@ -8,7 +8,7 @@ const Collection = ({navigation}) => {
   return (
     <>
       <SafeAreaView style={{backgroundColor: 'white', flex: 1}}>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <TopMenu nav={navigation} />
           <Search />
           <Main />

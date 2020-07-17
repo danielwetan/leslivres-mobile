@@ -23,7 +23,7 @@ const AuthorList = () => {
           }}>
           Authors
         </Text>
-        <ScrollView horizontal={true}>
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           <View
             style={{
               flexDirection: 'row',

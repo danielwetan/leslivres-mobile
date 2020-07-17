@@ -24,8 +24,7 @@ const Popular = () => {
           }}>
           Daniel
         </Text>
-        <ScrollView horizontal={true}>
-        {/* showsHorizontalScrollIndicator={false} */}
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           <View
             style={{
               flexDirection: 'row',

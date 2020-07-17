@@ -13,7 +13,7 @@ const Home = ({navigation}) => {
   return (
     <>
       <SafeAreaView style={{backgroundColor: 'white'}}>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <TopMenu nav={navigation} />
           <Search />
           <Popular />
