@@ -4,6 +4,9 @@ import {Header, Button, Icon, Text} from 'react-native-elements';
 import {View} from 'react-native';
 import styles from './styles';
 const TopMenu = (props) => {
+  const openDrawer = () => {
+    props.nav.openDrawer();
+  };
   return (
     <>
       <View
@@ -17,7 +20,8 @@ const TopMenu = (props) => {
               name="list"
               type="entypo"
               color="#373D3F"
-              onPress={() => props.nav.openDrawer()}
+              // onPress={() => props.nav.openDrawer()}
+              onPress={openDrawer}
             />
           }
           // centerComponent={{

@@ -6,6 +6,10 @@ CRUD:
 
 # HOME
 - Get book
+** Author 
+- Display Single Author data
+** Popular 
+- Display popular book data 
 
 # Collection
 - Get book
