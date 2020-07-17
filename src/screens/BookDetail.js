@@ -1,14 +1,16 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Text} from 'react-native';
-
-const BookDetail = () => {
+// import Icon from 'react-native-vector-icons/FontAwesome';
+// import {Input, Button} from 'react-native-elements';
+import TopMenu from '../components/Public/Menu/Top';
+import Main from '../components/BookDetail';
+const Profile = () => {
   return (
     <>
-      <View>
-        <Text>This is BookDetail Screen</Text>
-      </View>
+      <TopMenu />
+      <Main />
     </>
   );
 };
 
-export default BookDetail;
+export default Profile;
