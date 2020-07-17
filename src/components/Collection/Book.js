@@ -4,11 +4,13 @@ import {View, Text} from 'react-native';
 import styles from './styles';
 import {Image, Button} from 'react-native-elements';
 
-import img from '../../assets/images/harry-potter.jpg';
-import img1 from '../../assets/images/harry-potter-1.jpg';
-import img2 from '../../assets/images/catching-fire.jpg';
+// import img from '../../assets/images/harry-potter.jpg';
+// // import img1 from '../../assets/images/harry-potter-1.jpg';
+// import img2 from '../../assets/images/catching-fire.jpg';
 
-const Book = () => {
+const Book = (props) => {
+  const img = 'http://192.168.43.186:3000/img/' + props.img;
+
   return (
     <>
       <View
@@ -39,7 +41,7 @@ const Book = () => {
               alignItems: 'center',
             }}>
             <Image
-              source={img1}
+              source={{uri: img}}
               style={{
                 width: 70,
                 height: 110,
@@ -50,7 +52,7 @@ const Book = () => {
           </View>
           <View
             style={{
-              marginRight: 150,
+              marginRight: 100,
               marginLeft: 20,
             }}>
             <Text
@@ -59,7 +61,7 @@ const Book = () => {
                 fontFamily: 'Quicksand-Bold',
                 color: '#373D3F',
               }}>
-              Harry Potter and the Socrecrer Stone
+              {props.title}
             </Text>
             <Text
               style={{
@@ -68,7 +70,7 @@ const Book = () => {
                 fontFamily: 'Quicksand-Bold',
                 color: 'gray',
               }}>
-              J.K. Rowling
+              {props.author}
             </Text>
             <Text
               style={{
@@ -77,7 +79,7 @@ const Book = () => {
                 fontFamily: 'Quicksand-Bold',
                 color: '#004380',
               }}>
-              Fiction
+              {props.genre}
             </Text>
             <Text
               style={{
@@ -86,7 +88,7 @@ const Book = () => {
                 color: '#373D3F',
                 fontFamily: 'Quicksand-Medium',
               }}>
-              Available
+              {props.status}
             </Text>
           </View>
         </View>
