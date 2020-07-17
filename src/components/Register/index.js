@@ -1,29 +1,60 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {View, Text} from 'react-native';
 // import Icon from 'react-native-vector-icons/FontAwesome';
 import {Input, Button} from 'react-native-elements';
 import styles from './styles';
 
-const Register = () => {
+import { connect } from 'react-redux';
+import { register } from '../../redux/actions/auth';
+
+const Register = props => {
+  const [username, setUsername] = useState('');
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [role, setRole] = useState('');
+
+  const userRegistration = () => {
+    setRole(2)
+    const data = {
+      username: username,
+      full_name: fullName,
+      email: email,
+      password: password,
+      role: role
+    }
+    props.dispatch(register(data))
+      .then(() => {
+        console.log('Register success!')
+        props.nav.navigate('Login')
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  }
+
   return (
     <>
       <View style={styles.container}>
         <Text style={styles.title}>Username</Text>
-        <Input placeholder="Username" />
+        <Input onChangeText={text => setUsername(text)} placeholder="Username" />
 
         <Text style={styles.body}>Full Name</Text>
-        <Input placeholder="John Doe" />
+        <Input onChangeText={text => setFullName(text)} placeholder="John Doe" />
 
         <Text style={styles.title}>Email</Text>
-        <Input placeholder="email@example.com" />
+        <Input onChangeText={text => setEmail(text)} placeholder="email@example.com" />
 
         <Text style={styles.title}>Password</Text>
-        <Input placeholder="Password" />
-
-        <Button title="Register" />
+        <Input onChangeText={text => setPassword(text)} placeholder="Password" />
+        <Button onPress={userRegistration} title="Register" />
       </View>
     </>
   );
 };
 
-export default Register;
+const mapStateToProps = state => ({
+  auth: state.auth
+})
+
+export default connect(mapStateToProps)(Register)
