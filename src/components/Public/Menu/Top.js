@@ -1,8 +1,8 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {Header} from 'react-native-elements';
+import {Header, Button, Icon} from 'react-native-elements';
 import {View} from 'react-native';
-const TopMenu = () => {
+const TopMenu = (props) => {
   return (
     <>
       <View
@@ -11,11 +11,13 @@ const TopMenu = () => {
           marginRight: 10,
         }}>
         <Header
-          leftComponent={{
-            icon: 'filter-list',
-            color: '#111',
-            size: 30,
-          }}
+          leftComponent={
+            <Icon
+              name="apps"
+              color="#373D3F"
+              onPress={() => props.nav.openDrawer()}
+            />
+          }
           centerComponent={{
             text: 'LesLivres',
             style: {
@@ -24,11 +26,13 @@ const TopMenu = () => {
               color: '#373D3F',
             },
           }}
-          rightComponent={{
-            icon: 'account-circle',
-            color: '#111',
-            size: 30,
-          }}
+          rightComponent={
+            <Icon
+              name="apps"
+              color="#373D3F"
+              onPress={() => props.nav.openDrawer()}
+            />
+          }
           containerStyle={{
             backgroundColor: '#fff',
           }}

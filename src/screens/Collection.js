@@ -4,10 +4,10 @@ import TopMenu from '../components/Public/Menu/Top';
 import Search from '../components/Public/Search';
 import Main from '../components/Collection';
 
-const Collection = () => {
+const Collection = ({navigation}) => {
   return (
     <>
-      <TopMenu />
+      <TopMenu nav={navigation}/>
       <Search />
       <Main />
     </>

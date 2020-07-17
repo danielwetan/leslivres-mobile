@@ -4,10 +4,10 @@ import React from 'react';
 // import {Input, Button} from 'react-native-elements';
 import TopMenu from '../components/Public/Menu/Top';
 import Main from '../components/BookDetail';
-const Profile = () => {
+const Profile = ({navigation}) => {
   return (
     <>
-      <TopMenu />
+      <TopMenu nav={navigation} />
       <Main />
     </>
   );
