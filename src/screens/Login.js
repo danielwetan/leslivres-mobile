@@ -3,11 +3,11 @@ import React from 'react';
 import Main from '../components/Login';
 import {SafeAreaView} from 'react-native';
 
-const Login = () => {
+const Login = ({navigation}) => {
   return (
     <>
       <SafeAreaView style={{backgroundColor: 'white', flex: 1}}>
-        <Main />
+        <Main nav={navigation} />
       </SafeAreaView>
     </>
   );

@@ -9,17 +9,17 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 
-// import {Provider} from 'react-redux';
-// import storage from './redux/store';
-// import {PersistGate} from 'redux-persist/integration/react';
-// const {store, persistor} = storage;
+import {Provider} from 'react-redux';
+import storage from './src/redux/store';
+import {PersistGate} from 'redux-persist/integration/react';
+const {store, persistor} = storage;
 
 const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
-    // <Provider store={store}>
-    //   <PersistGate persistor={persistor}>
+    <Provider store={store}>
+      <PersistGate persistor={persistor}>
     <NavigationContainer>
       <Drawer.Navigator>
         <Drawer.Screen name="Home" component={Home} />
@@ -30,7 +30,7 @@ export default function App() {
         <Drawer.Screen name="Register" component={Register} />
       </Drawer.Navigator>
     </NavigationContainer>
-    //   </PersistGate>
-    // </Provider>
+    </PersistGate>
+    </Provider>
   );
 }
