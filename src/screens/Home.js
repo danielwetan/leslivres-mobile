@@ -16,9 +16,9 @@ const Home = ({navigation}) => {
         <ScrollView showsVerticalScrollIndicator={false}>
           <TopMenu nav={navigation} />
           <Search />
-          <Popular />
-          <Authors />
-          <Books />
+          <Popular nav={navigation} />
+          <Authors nav={navigation} />
+          <Books nav={navigation} />
         </ScrollView>
       </SafeAreaView>
     </>
