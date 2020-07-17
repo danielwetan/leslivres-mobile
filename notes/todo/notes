@@ -1,0 +1,15 @@
+CRUD:
+
+# Profile
+- Get author data
+- Get borrow history
+
+# HOME
+- Get book
+
+# Collection
+- Get book
+- Search, sort, pagination, etc
+
+# BookDetail
+- Get single book data

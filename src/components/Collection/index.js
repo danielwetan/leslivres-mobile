@@ -8,7 +8,7 @@ import img from '../../assets/images/harry-potter.jpg';
 import img1 from '../../assets/images/harry-potter-1.jpg';
 import img2 from '../../assets/images/catching-fire.jpg';
 
-import Book from './Book';
+import BookList from './BookList';
 
 const Collection = () => {
   return (
@@ -24,11 +24,7 @@ const Collection = () => {
         }}>
         Sorted by Date added
       </Text>
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
+      <BookList />
     </>
   );
 };

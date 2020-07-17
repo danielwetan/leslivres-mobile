@@ -4,6 +4,7 @@ import {View, Text} from 'react-native';
 import {Image} from 'react-native-elements';
 import styles from './syles';
 import img from '../../assets/images/harry-potter.jpg';
+import HistoryList from './HistoryList';
 
 const Profile = () => {
   return (
@@ -21,9 +22,12 @@ const Profile = () => {
           />
           <Text style={styles.username}>danielwetan</Text>
           <Text style={styles.name}>Daniel Saputra</Text>
-          <Text style={styles.email}>danielwetan.io@gmail.com</Text>
+          <Text style={(styles.email, {marginBottom: 10})}>
+            danielwetan.io@gmail.com
+          </Text>
         </View>
-        <Text style={styles.history}>Borrow History</Text>
+        {/* <Text style={styles.history}>Borrow History</Text> */}
+        <HistoryList />
       </View>
     </>
   );
