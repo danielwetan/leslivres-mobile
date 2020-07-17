@@ -13,7 +13,7 @@ const Book = () => {
     <>
       <View
         style={{
-          marginTop: 10,
+          marginTop: 5,
         }}>
         {/* <Text
           style={{
@@ -27,7 +27,7 @@ const Book = () => {
         <View
           style={{
             flexDirection: 'row',
-            paddingTop: 10,
+            paddingTop: 5,
             // borderTopColor: 'lightgray',
             // borderTopWidth: 1,
           }}>
@@ -39,8 +39,8 @@ const Book = () => {
             <Image
               source={img1}
               style={{
-                width: 70,
-                height: 110,
+                width: 65,
+                height: 100,
                 borderRadius: 10,
                 overflow: 'hidden',
               }}
@@ -61,7 +61,7 @@ const Book = () => {
             </Text>
             <Text
               style={{
-                marginTop: 5,
+                marginTop: 2,
                 fontSize: 14,
                 fontFamily: 'Quicksand-Bold',
                 color: 'gray',
@@ -79,7 +79,7 @@ const Book = () => {
             </Text>
             <Text
               style={{
-                marginTop: 5,
+                marginTop: 3,
                 fontSize: 12,
                 color: '#373D3F',
                 fontFamily: 'Quicksand-Medium',

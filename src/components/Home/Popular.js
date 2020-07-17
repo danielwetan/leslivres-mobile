@@ -7,6 +7,8 @@ import img from '../../assets/images/harry-potter.jpg';
 import img1 from '../../assets/images/harry-potter-1.jpg';
 import img2 from '../../assets/images/catching-fire.jpg';
 
+import {API_URL} from '@env';
+
 const Popular = () => {
   return (
     <>
@@ -22,7 +24,7 @@ const Popular = () => {
             fontFamily: 'Quicksand-Bold',
             color: '#373D3F',
           }}>
-          Daniel
+            Popular
         </Text>
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           <View

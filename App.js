@@ -1,6 +1,3 @@
-/* eslint-disable react-native/no-inline-styles */
-// import React from 'react';
-// import {ThemeProvider} from 'react-native-elements';
 import BookDetail from './src/screens/BookDetail';
 import Collection from './src/screens/Collection';
 import Home from './src/screens/Home';
@@ -8,37 +5,21 @@ import Login from './src/screens/Login';
 import Profile from './src/screens/Profile';
 import Register from './src/screens/Register';
 
-// // import Drawer from './src/components/Public/Menu/Drawer';
-// import {SafeAreaView, ScrollView} from 'react-native';
-
-// // ScrollView => horizontal true
-
-// const App = () => {
-//   return (
-//     <SafeAreaView>
-//       <ScrollView>
-//         <Home />
-//       </ScrollView>
-//     </SafeAreaView>
-//   );
-// };
-
-// export default App;
-
 import * as React from 'react';
-import {View, Text, Button, SafeAreaView, ScrollView} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import {
-  createDrawerNavigator,
-  DrawerContentScrollView,
-  DrawerItemList,
-  DrawerItem,
-} from '@react-navigation/drawer';
+import {createDrawerNavigator} from '@react-navigation/drawer';
+
+// import {Provider} from 'react-redux';
+// import storage from './redux/store';
+// import {PersistGate} from 'redux-persist/integration/react';
+// const {store, persistor} = storage;
 
 const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
+    // <Provider store={store}>
+    //   <PersistGate persistor={persistor}>
     <NavigationContainer>
       <Drawer.Navigator>
         <Drawer.Screen name="Home" component={Home} />
@@ -49,5 +30,7 @@ export default function App() {
         <Drawer.Screen name="Register" component={Register} />
       </Drawer.Navigator>
     </NavigationContainer>
+    //   </PersistGate>
+    // </Provider>
   );
 }
