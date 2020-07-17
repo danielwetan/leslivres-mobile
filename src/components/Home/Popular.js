@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, ScrollView} from 'react-native';
 import {Image} from 'react-native-elements';
 
 import img from '../../assets/images/harry-potter.jpg';
@@ -22,115 +22,185 @@ const Popular = () => {
             fontFamily: 'Quicksand-Bold',
             color: '#373D3F',
           }}>
-          Popular
+          Daniel
         </Text>
-
-        <View
-          style={{
-            flexDirection: 'row',
-          }}>
+        <ScrollView horizontal={true}>
+        {/* showsHorizontalScrollIndicator={false} */}
           <View
             style={{
-              justifyContent: 'center',
-              alignItems: 'center',
+              flexDirection: 'row',
             }}>
-            <Image
-              source={img}
+            <View
               style={{
-                marginTop: 10,
-                width: 130,
-                height: 200,
-                borderRadius: 10,
-                overflow: 'hidden',
-              }}
-            />
-            <Text
-              style={{
-                marginTop: 10,
-                fontSize: 15,
-                fontFamily: 'Quicksand-Bold',
-                color: '#373D3F',
+                justifyContent: 'center',
+                alignItems: 'center',
               }}>
-              Harry Potter
-            </Text>
-            <Text
+              <Image
+                source={img}
+                style={{
+                  marginTop: 10,
+                  width: 130,
+                  height: 200,
+                  borderRadius: 10,
+                  overflow: 'hidden',
+                }}
+              />
+              <Text
+                style={{
+                  marginTop: 10,
+                  fontSize: 15,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                Harry Potter
+              </Text>
+              <Text
+                style={{
+                  fontSize: 12,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                J.K. Rowling
+              </Text>
+            </View>
+            <View
               style={{
-                fontSize: 12,
-                fontFamily: 'Quicksand-Bold',
-                color: '#373D3F',
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginLeft: 15,
               }}>
-              J.K. Rowling
-            </Text>
+              <Image
+                source={img1}
+                style={{
+                  marginTop: 10,
+                  width: 130,
+                  height: 200,
+                  borderRadius: 10,
+                  overflow: 'hidden',
+                }}
+              />
+              <Text
+                style={{
+                  marginTop: 10,
+                  fontSize: 15,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                Harry Potter
+              </Text>
+              <Text
+                style={{
+                  fontSize: 12,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                J.K. Rowling
+              </Text>
+            </View>
+            <View
+              style={{
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginLeft: 15,
+              }}>
+              <Image
+                source={img2}
+                style={{
+                  marginTop: 10,
+                  width: 130,
+                  height: 200,
+                  borderRadius: 10,
+                  overflow: 'hidden',
+                }}
+              />
+              <Text
+                style={{
+                  marginTop: 10,
+                  fontSize: 15,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                Catching Fire
+              </Text>
+              <Text
+                style={{
+                  fontSize: 12,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                Suzanne Colins
+              </Text>
+            </View>
+            <View
+              style={{
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginLeft: 15,
+              }}>
+              <Image
+                source={img1}
+                style={{
+                  marginTop: 10,
+                  width: 130,
+                  height: 200,
+                  borderRadius: 10,
+                  overflow: 'hidden',
+                }}
+              />
+              <Text
+                style={{
+                  marginTop: 10,
+                  fontSize: 15,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                Harry Potter
+              </Text>
+              <Text
+                style={{
+                  fontSize: 12,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                J.K. Rowling
+              </Text>
+            </View>
+            <View
+              style={{
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginLeft: 15,
+              }}>
+              <Image
+                source={img2}
+                style={{
+                  marginTop: 10,
+                  width: 130,
+                  height: 200,
+                  borderRadius: 10,
+                  overflow: 'hidden',
+                }}
+              />
+              <Text
+                style={{
+                  marginTop: 10,
+                  fontSize: 15,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                Catching Fire
+              </Text>
+              <Text
+                style={{
+                  fontSize: 12,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                Suzanne Colins
+              </Text>
+            </View>
           </View>
-          <View
-            style={{
-              justifyContent: 'center',
-              alignItems: 'center',
-              marginLeft: 15,
-            }}>
-            <Image
-              source={img1}
-              style={{
-                marginTop: 10,
-                width: 130,
-                height: 200,
-                borderRadius: 10,
-                overflow: 'hidden',
-              }}
-            />
-            <Text
-              style={{
-                marginTop: 10,
-                fontSize: 15,
-                fontFamily: 'Quicksand-Bold',
-                color: '#373D3F',
-              }}>
-              Harry Potter
-            </Text>
-            <Text
-              style={{
-                fontSize: 12,
-                fontFamily: 'Quicksand-Bold',
-                color: '#373D3F',
-              }}>
-              J.K. Rowling
-            </Text>
-          </View>
-          <View
-            style={{
-              justifyContent: 'center',
-              alignItems: 'center',
-              marginLeft: 15,
-            }}>
-            <Image
-              source={img2}
-              style={{
-                marginTop: 10,
-                width: 130,
-                height: 200,
-                borderRadius: 10,
-                overflow: 'hidden',
-              }}
-            />
-            <Text
-              style={{
-                marginTop: 10,
-                fontSize: 15,
-                fontFamily: 'Quicksand-Bold',
-                color: '#373D3F',
-              }}>
-              Catching Fire
-            </Text>
-            <Text
-              style={{
-                fontSize: 12,
-                fontFamily: 'Quicksand-Bold',
-                color: '#373D3F',
-              }}>
-              Suzanne Colins
-            </Text>
-          </View>
-        </View>
+        </ScrollView>
       </View>
     </>
   );

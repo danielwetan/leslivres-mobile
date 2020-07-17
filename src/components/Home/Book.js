@@ -14,7 +14,6 @@ const Book = () => {
       <View
         style={{
           marginTop: 10,
-          marginRight: 20,
         }}>
         {/* <Text
           style={{
@@ -29,8 +28,8 @@ const Book = () => {
           style={{
             flexDirection: 'row',
             paddingTop: 10,
-            borderTopColor: 'lightgray',
-            borderTopWidth: 1,
+            // borderTopColor: 'lightgray',
+            // borderTopWidth: 1,
           }}>
           <View
             style={{
@@ -38,10 +37,10 @@ const Book = () => {
               alignItems: 'center',
             }}>
             <Image
-              source={img}
+              source={img1}
               style={{
-                width: 80,
-                height: 120,
+                width: 70,
+                height: 110,
                 borderRadius: 10,
                 overflow: 'hidden',
               }}
@@ -49,7 +48,7 @@ const Book = () => {
           </View>
           <View
             style={{
-              marginRight: 100,
+              marginRight: 150,
               marginLeft: 20,
             }}>
             <Text
@@ -80,7 +79,7 @@ const Book = () => {
             </Text>
             <Text
               style={{
-                marginTop: 10,
+                marginTop: 5,
                 fontSize: 12,
                 color: '#373D3F',
                 fontFamily: 'Quicksand-Medium',

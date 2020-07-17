@@ -1,11 +1,14 @@
 import React from 'react';
 // import Icon from 'react-native-vector-icons/FontAwesome';
 import Main from '../components/Login';
+import {SafeAreaView} from 'react-native';
 
 const Login = () => {
   return (
     <>
-      <Main />
+      <SafeAreaView style={{backgroundColor: 'white', flex: 1}}>
+        <Main />
+      </SafeAreaView>
     </>
   );
 };

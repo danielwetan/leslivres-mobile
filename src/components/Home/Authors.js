@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, ScrollView} from 'react-native';
 
 import img from '../../assets/images/harry-potter.jpg';
 import img1 from '../../assets/images/harry-potter-1.jpg';
@@ -23,136 +23,138 @@ const AuthorList = () => {
           }}>
           Authors
         </Text>
-        <View
-          style={{
-            flexDirection: 'row',
-          }}>
+        <ScrollView horizontal={true}>
           <View
             style={{
-              alignItems: 'center',
+              flexDirection: 'row',
             }}>
-            <Image
-              source={img1}
+            <View
               style={{
-                marginTop: 10,
-                width: 70,
-                height: 70,
-                borderRadius: 50,
-                overflow: 'hidden',
-              }}
-            />
-            <Text
-              style={{
-                marginTop: 10,
-                fontSize: 12,
-                fontFamily: 'Quicksand-Bold',
-                color: '#373D3F',
+                alignItems: 'center',
               }}>
-              J.K. Rowling
-            </Text>
-          </View>
-          <View
-            style={{
-              marginLeft: 10,
-              alignItems: 'center',
-            }}>
-            <Image
-              source={img}
+              <Image
+                source={img1}
+                style={{
+                  marginTop: 10,
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  overflow: 'hidden',
+                }}
+              />
+              <Text
+                style={{
+                  marginTop: 10,
+                  fontSize: 12,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                J.K. Rowling
+              </Text>
+            </View>
+            <View
               style={{
-                marginTop: 10,
-                width: 70,
-                height: 70,
-                borderRadius: 50,
-                overflow: 'hidden',
-              }}
-            />
-            <Text
-              style={{
-                marginTop: 10,
-                fontSize: 12,
-                fontFamily: 'Quicksand-Bold',
-                color: '#373D3F',
+                marginLeft: 10,
+                alignItems: 'center',
               }}>
-              Barrack Obama
-            </Text>
-          </View>
-          <View
-            style={{
-              marginLeft: 5,
-              alignItems: 'center',
-            }}>
-            <Image
-              source={img2}
+              <Image
+                source={img}
+                style={{
+                  marginTop: 10,
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  overflow: 'hidden',
+                }}
+              />
+              <Text
+                style={{
+                  marginTop: 10,
+                  fontSize: 12,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                Barrack Obama
+              </Text>
+            </View>
+            <View
               style={{
-                marginTop: 10,
-                width: 70,
-                height: 70,
-                borderRadius: 50,
-                overflow: 'hidden',
-              }}
-            />
-            <Text
-              style={{
-                marginTop: 10,
-                fontSize: 12,
-                fontFamily: 'Quicksand-Bold',
-                color: '#373D3F',
+                marginLeft: 5,
+                alignItems: 'center',
               }}>
-              Suzanne Collins
-            </Text>
-          </View>
-          <View
-            style={{
-              marginLeft: 5,
-              alignItems: 'center',
-            }}>
-            <Image
-              source={img}
+              <Image
+                source={img2}
+                style={{
+                  marginTop: 10,
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  overflow: 'hidden',
+                }}
+              />
+              <Text
+                style={{
+                  marginTop: 10,
+                  fontSize: 12,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                Suzanne Collins
+              </Text>
+            </View>
+            <View
               style={{
-                marginTop: 10,
-                width: 70,
-                height: 70,
-                borderRadius: 50,
-                overflow: 'hidden',
-              }}
-            />
-            <Text
-              style={{
-                marginTop: 10,
-                fontSize: 12,
-                fontFamily: 'Quicksand-Bold',
-                color: '#373D3F',
+                marginLeft: 5,
+                alignItems: 'center',
               }}>
-              Nelson Mandela
-            </Text>
-          </View>
+              <Image
+                source={img}
+                style={{
+                  marginTop: 10,
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  overflow: 'hidden',
+                }}
+              />
+              <Text
+                style={{
+                  marginTop: 10,
+                  fontSize: 12,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                Nelson Mandela
+              </Text>
+            </View>
 
-          <View
-            style={{
-              marginLeft: 10,
-              alignItems: 'center',
-            }}>
-            <Image
-              source={img}
+            <View
               style={{
-                marginTop: 10,
-                width: 70,
-                height: 70,
-                borderRadius: 50,
-                overflow: 'hidden',
-              }}
-            />
-            <Text
-              style={{
-                marginTop: 10,
-                fontSize: 12,
-                fontFamily: 'Quicksand-Bold',
-                color: '#373D3F',
+                marginLeft: 10,
+                alignItems: 'center',
               }}>
-              Nelson Mandela
-            </Text>
+              <Image
+                source={img}
+                style={{
+                  marginTop: 10,
+                  width: 70,
+                  height: 70,
+                  borderRadius: 50,
+                  overflow: 'hidden',
+                }}
+              />
+              <Text
+                style={{
+                  marginTop: 10,
+                  fontSize: 12,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                Nelson Mandela
+              </Text>
+            </View>
           </View>
-        </View>
+        </ScrollView>
       </View>
     </>
   );

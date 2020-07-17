@@ -1,7 +1,8 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {Header, Button, Icon} from 'react-native-elements';
+import {Header, Button, Icon, Text} from 'react-native-elements';
 import {View} from 'react-native';
+import styles from './styles';
 const TopMenu = (props) => {
   return (
     <>
@@ -13,24 +14,32 @@ const TopMenu = (props) => {
         <Header
           leftComponent={
             <Icon
-              name="apps"
+              name="list"
+              type="entypo"
               color="#373D3F"
               onPress={() => props.nav.openDrawer()}
             />
           }
-          centerComponent={{
-            text: 'LesLivres',
-            style: {
-              fontSize: 22,
-              fontFamily: 'Quicksand-Bold',
-              color: '#373D3F',
-            },
-          }}
+          // centerComponent={{
+          //   text: 'LesLivres',
+          //   style: {
+          //     fontSize: 22,
+          //     fontFamily: 'Quicksand-Bold',
+          //     color: '#373D3F',
+          //   },
+          // }}
+          centerComponent={
+            <Text
+              style={styles.logoText}
+              onPress={() => props.nav.navigate('Home')}>
+              LesLivres
+            </Text>
+          }
           rightComponent={
             <Icon
-              name="apps"
+              name="account-circle"
               color="#373D3F"
-              onPress={() => props.nav.openDrawer()}
+              onPress={() => props.nav.navigate('Profile')}
             />
           }
           containerStyle={{

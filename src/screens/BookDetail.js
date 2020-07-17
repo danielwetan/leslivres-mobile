@@ -4,11 +4,14 @@ import React from 'react';
 // import {Input, Button} from 'react-native-elements';
 import TopMenu from '../components/Public/Menu/Top';
 import Main from '../components/BookDetail';
+import {SafeAreaView} from 'react-native';
 const Profile = ({navigation}) => {
   return (
     <>
-      <TopMenu nav={navigation} />
-      <Main />
+      <SafeAreaView style={{backgroundColor: 'white', flex: 1}}>
+        <TopMenu nav={navigation} />
+        <Main />
+      </SafeAreaView>
     </>
   );
 };
