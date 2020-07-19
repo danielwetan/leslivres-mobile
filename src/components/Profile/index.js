@@ -1,31 +1,49 @@
 /* eslint-disable react-native/no-inline-styles */
-import React from 'react';
-import {View, Text} from 'react-native';
-import {Image} from 'react-native-elements';
+import React, {useState, useEffect} from 'react';
+import {View} from 'react-native';
 import styles from './syles';
-import img from '../../assets/images/harry-potter.jpg';
+
+import ProfileInfo from './ProfileInfo';
 import HistoryList from './HistoryList';
+import Axios from 'axios';
 
 const Profile = () => {
+  const [userInfo, setUserInfo] = useState([]);
+
+  const getUserData = () => {
+    Axios({
+      method: 'GET',
+      url: 'http://192.168.43.186:3000/user/1',
+    })
+      .then((res) => {
+        setUserInfo(res.data.body);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  useEffect(() => {
+    getUserData();
+  }, []);
+
+  console.log(userInfo);
+
   return (
     <>
       <View style={[styles.container, styles.profile]}>
-        <View style={styles.profile}>
-          <Image
-            source={img}
-            style={{
-              width: 100,
-              height: 100,
-              borderRadius: 50,
-              overflow: 'hidden',
-            }}
-          />
-          <Text style={styles.username}>danielwetan</Text>
-          <Text style={styles.name}>Daniel Saputra</Text>
-          <Text style={(styles.email, {marginBottom: 10})}>
-            danielwetan.io@gmail.com
-          </Text>
-        </View>
+        {userInfo.map((data) => {
+          return (
+            <ProfileInfo
+              key={data.id}
+              id={data.id}
+              username={data.username}
+              fullName={data.full_name}
+              email={data.email}
+            />
+          );
+        })}
+
         {/* <Text style={styles.history}>Borrow History</Text> */}
         <HistoryList />
       </View>

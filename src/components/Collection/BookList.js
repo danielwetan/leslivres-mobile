@@ -16,7 +16,7 @@ const BookList = (props) => {
 
   const getBooks = () => {
     axios({
-      metod: 'GET',
+      method: 'GET',
       url: 'http://192.168.43.186:3000/book',
       params: {
         search: search,

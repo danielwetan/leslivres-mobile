@@ -13,7 +13,7 @@ CRUD:
 
 # Collection
 - Get book (v)
-- Single book touchable
+- Single book touchable (v)
 - Search, sort, pagination, etc
 
 # BookDetail
