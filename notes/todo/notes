@@ -2,18 +2,22 @@ CRUD:
 
 # Profile
 - Get author data
-- Get borrow history
+- Get borrow history (v)
 
 # HOME
-- Get book
+- Get book (v)
 ** Author 
-- Display Single Author data
-** Popular 
+- Display Book by author
+** Featured
 - Display popular book data 
 
 # Collection
-- Get book
+- Get book (v)
+- Single book touchable
 - Search, sort, pagination, etc
 
 # BookDetail
-- Get single book data
+- Get single book data based on id
+
+# Bug
+- Error: register harus submit data dua kali

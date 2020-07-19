@@ -11,7 +11,7 @@ const Collection = ({navigation}) => {
         <ScrollView showsVerticalScrollIndicator={false}>
           <TopMenu nav={navigation} />
           <Search />
-          <Main />
+          <Main nav={navigation} />
         </ScrollView>
       </SafeAreaView>
     </>

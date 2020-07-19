@@ -7,7 +7,7 @@ import axios from 'axios';
 import {connect} from 'react-redux';
 import {getBook} from '../../redux/actions/book';
 
-const BookList = () => {
+const BookList = (props) => {
   const [books, setBook] = useState([]);
   const [search, setSearch] = useState('');
   const [status, setStatus] = useState('');
@@ -55,6 +55,7 @@ const BookList = () => {
             genre={book.genre}
             status={book.status}
             img={book.img}
+            nav={props.nav}
           />
         );
       })}

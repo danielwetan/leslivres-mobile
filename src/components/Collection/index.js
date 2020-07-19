@@ -10,7 +10,7 @@ import img2 from '../../assets/images/catching-fire.jpg';
 
 import BookList from './BookList';
 
-const Collection = () => {
+const Collection = (props) => {
   return (
     <>
       <Text
@@ -24,7 +24,7 @@ const Collection = () => {
         }}>
         Sorted by Date added
       </Text>
-      <BookList />
+      <BookList nav={props.nav} />
     </>
   );
 };

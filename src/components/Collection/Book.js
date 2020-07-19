@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, TouchableHighlight} from 'react-native';
 import styles from './styles';
 import {Image, Button} from 'react-native-elements';
 
@@ -28,70 +28,76 @@ const Book = (props) => {
           Collection
         </Text> */}
 
-        <View
-          style={{
-            flexDirection: 'row',
-            paddingTop: 10,
-            // borderTopColor: 'lightgray',
-            // borderTopWidth: 1,
-          }}>
+        <TouchableHighlight
+          underlayColor={'lightgray'}
+          activeOpacity={1}
+          onPress={() => props.nav.navigate('BookDetail')}>
           <View
             style={{
-              justifyContent: 'center',
-              alignItems: 'center',
+              flexDirection: 'row',
+              paddingTop: 5,
+              paddingBottom: 5,
+              // borderTopColor: 'lightgray',
+              // borderTopWidth: 1,
             }}>
-            <Image
-              source={{uri: img}}
+            <View
               style={{
-                width: 70,
-                height: 110,
-                borderRadius: 10,
-                overflow: 'hidden',
-              }}
-            />
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Image
+                source={{uri: img}}
+                style={{
+                  width: 70,
+                  height: 110,
+                  borderRadius: 10,
+                  overflow: 'hidden',
+                }}
+              />
+            </View>
+            <View
+              style={{
+                marginRight: 100,
+                marginLeft: 20,
+              }}>
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#373D3F',
+                }}>
+                {props.title}
+              </Text>
+              <Text
+                style={{
+                  marginTop: 5,
+                  fontSize: 14,
+                  fontFamily: 'Quicksand-Bold',
+                  color: 'gray',
+                }}>
+                {props.author}
+              </Text>
+              <Text
+                style={{
+                  paddingTop: 3,
+                  fontSize: 14,
+                  fontFamily: 'Quicksand-Bold',
+                  color: '#004380',
+                }}>
+                {props.genre}
+              </Text>
+              <Text
+                style={{
+                  marginTop: 5,
+                  fontSize: 12,
+                  color: '#373D3F',
+                  fontFamily: 'Quicksand-Medium',
+                }}>
+                {props.status}
+              </Text>
+            </View>
           </View>
-          <View
-            style={{
-              marginRight: 100,
-              marginLeft: 20,
-            }}>
-            <Text
-              style={{
-                fontSize: 16,
-                fontFamily: 'Quicksand-Bold',
-                color: '#373D3F',
-              }}>
-              {props.title}
-            </Text>
-            <Text
-              style={{
-                marginTop: 5,
-                fontSize: 14,
-                fontFamily: 'Quicksand-Bold',
-                color: 'gray',
-              }}>
-              {props.author}
-            </Text>
-            <Text
-              style={{
-                paddingTop: 3,
-                fontSize: 14,
-                fontFamily: 'Quicksand-Bold',
-                color: '#004380',
-              }}>
-              {props.genre}
-            </Text>
-            <Text
-              style={{
-                marginTop: 5,
-                fontSize: 12,
-                color: '#373D3F',
-                fontFamily: 'Quicksand-Medium',
-              }}>
-              {props.status}
-            </Text>
-          </View>
-        </View>
+        </TouchableHighlight>
       </View>
     </>
   );

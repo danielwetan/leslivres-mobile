@@ -13,8 +13,10 @@ const BookDetail = () => {
           <Image
             source={img}
             style={{
-              width: 120,
-              height: 170,
+              // width: 120,
+              // height: 190,
+              width: 130,
+              height: 200,
               borderRadius: 10,
               overflow: 'hidden',
             }}
