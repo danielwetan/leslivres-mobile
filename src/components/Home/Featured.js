@@ -7,12 +7,12 @@ import img from '../../assets/images/harry-potter.jpg';
 import img1 from '../../assets/images/harry-potter-1.jpg';
 import img2 from '../../assets/images/catching-fire.jpg';
 
-import PopularSingle from './PopularSingle';
+import FeaturedSingle from './FeaturedSingle';
 import axios from 'axios';
 
 import {API_URL} from '@env';
 
-const Popular = (props) => {
+const Featured = (props) => {
   const [books, setBook] = useState([]);
   const [search, setSearch] = useState('');
   const [status, setStatus] = useState('');
@@ -56,7 +56,7 @@ const Popular = (props) => {
             fontFamily: 'Quicksand-Bold',
             color: '#373D3F',
           }}>
-          Popular
+          Featured
         </Text>
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
           <View
@@ -65,7 +65,7 @@ const Popular = (props) => {
             }}>
             {books.map((book) => {
               return (
-                <PopularSingle
+                <FeaturedSingle
                   key={book.id}
                   id={book.id}
                   title={book.title}
@@ -84,4 +84,4 @@ const Popular = (props) => {
   );
 };
 
-export default Popular;
+export default Featured;

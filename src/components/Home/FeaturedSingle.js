@@ -3,7 +3,7 @@ import React from 'react';
 import {View, Text, ScrollView, TouchableHighlight} from 'react-native';
 import {Image} from 'react-native-elements';
 
-const Popular = (props) => {
+const FeaturedSingle = (props) => {
   const img = 'http://192.168.43.186:3000/img/' + props.img;
 
   return (
@@ -20,6 +20,7 @@ const Popular = (props) => {
           <View
             style={{
               marginRight: 10,
+              width: 140,
             }}>
             <Image
               source={{uri: img}}
@@ -57,4 +58,4 @@ const Popular = (props) => {
   );
 };
 
-export default Popular;
+export default FeaturedSingle;

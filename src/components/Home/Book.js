@@ -57,7 +57,7 @@ const Book = (props) => {
             </View>
             <View
               style={{
-                marginRight: 100,
+                marginRight: 120,
                 marginLeft: 20,
               }}>
               <Text

@@ -1,23 +1,23 @@
 CRUD:
 
 # Profile
-- Get user data (v)
-- Get borrow history (v)
+- Use realtime profile data (1)
+- Logout
 
 # HOME
-- Get book (v)
-** Author 
-- Display Book by author
 ** Featured
-- Display popular book data 
+- Display featured book data (5 books) (0.5)
 
 # Collection
-- Get book (v)
-- Single book touchable (v)
-- Search, sort, pagination, etc
+- Sort data by ASC or DESC (0.5)
+- Sort Book by author / genre (1)
+- Search, sort, pagination, etc (2)
 
 # BookDetail
-- Get single book data based on id
 
 # Bug
 - Error: register harus submit data dua kali
+
+---
+
+Convert all axios function into redux

@@ -20,17 +20,17 @@ export default function App() {
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
-    <NavigationContainer>
-      <Drawer.Navigator>
-        <Drawer.Screen name="Home" component={Home} />
-        <Drawer.Screen name="Profile" component={Profile} />
-        <Drawer.Screen name="Collection" component={Collection} />
-        <Drawer.Screen name="BookDetail" component={BookDetail} />
-        <Drawer.Screen name="Login" component={Login} />
-        <Drawer.Screen name="Register" component={Register} />
-      </Drawer.Navigator>
-    </NavigationContainer>
-    </PersistGate>
+        <NavigationContainer>
+          <Drawer.Navigator>
+            <Drawer.Screen name="Home" component={Home} />
+            <Drawer.Screen name="Profile" component={Profile} />
+            <Drawer.Screen name="Collection" component={Collection} />
+            <Drawer.Screen name="BookDetail" component={BookDetail} />
+            <Drawer.Screen name="Login" component={Login} />
+            <Drawer.Screen name="Register" component={Register} />
+          </Drawer.Navigator>
+        </NavigationContainer>
+      </PersistGate>
     </Provider>
   );
 }

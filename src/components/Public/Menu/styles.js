@@ -1,6 +1,6 @@
 module.exports = {
   logoText: {
-    fontSize: 25,
+    fontSize: 20,
     fontFamily: 'Quicksand-Bold',
   },
 };
