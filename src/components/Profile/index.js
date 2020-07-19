@@ -27,8 +27,6 @@ const Profile = () => {
     getUserData();
   }, []);
 
-  console.log(userInfo);
-
   return (
     <>
       <View style={[styles.container, styles.profile]}>

@@ -31,7 +31,7 @@ const Book = (props) => {
         <TouchableHighlight
           underlayColor={'lightgray'}
           activeOpacity={1}
-          onPress={() => props.nav.navigate('BookDetail')}>
+          onPress={() => props.nav.navigate('BookDetail', {id: props.id})}>
           <View
             style={{
               flexDirection: 'row',
