@@ -9,13 +9,17 @@ CRUD:
 - Display featured book data (5 books) (0.5)
 
 # Collection
-- Sort Book by author / genre (1)
-- Search, sort, pagination, etc (2)
+- Sort Book by genre (1)
+- Search (1)
 
 # BookDetail
+- Improve UI (1)
+
+# Login Register
+- Response modal when success (1)
+- Improve UI (1)
 
 # Bug
-
 ---
 
 Convert all axios function into redux (2)

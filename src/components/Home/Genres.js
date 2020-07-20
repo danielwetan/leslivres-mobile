@@ -6,19 +6,19 @@ const Genres = (props) => {
 
   const list1 = [
     {
-      genre: 1,
+      genre: 'fiction',
       title: 'Fiction',
       type: 'font-awesome',
       icon: 'comments',
     },
     {
-      genre: 2,
+      genre: 'history',
       title: 'History',
       type: 'font-awesome',
       icon: 'hourglass-half',
     },
     {
-      genre: 3,
+      genre: 'biography',
       title: 'Biography',
       type: 'font-awesome',
       icon: 'users',
@@ -27,19 +27,19 @@ const Genres = (props) => {
 
   const list2 = [
     {
-      genre: 4,
+      genre: 'nonfiction',
       title: 'Non-Fiction',
       type: 'font-awesome',
       icon: 'pencil',
     },
     {
-      genre: 5,
+      genre: 'children',
       title: 'Children',
       type: 'font-awesome',
       icon: 'child',
     },
     {
-      genre: 6,
+      genre: 'classic',
       title: 'Classics',
       type: 'font-awesome',
       icon: 'bank',
@@ -87,7 +87,7 @@ const Genres = (props) => {
                 key={i}
                 title={item.title}
                 leftIcon={{type: item.type, name: item.icon, color: '#373D3F', size: 20,}}
-                onPress={() => props.nav.navigate('Collection', {genreId: item.genre})}
+                onPress={() => props.nav.navigate('Collection', {genreName: item.genre})}
                 // onPress={() => console.log(item.text)}
               />
             ))
@@ -96,7 +96,7 @@ const Genres = (props) => {
           <View style={{
       flex: 1,
     }}>
-{
+          {
           list2.map((item, i) => (
               <ListItem
               containerStyle={{
@@ -113,9 +113,10 @@ const Genres = (props) => {
               }}
                 key={i}
                 title={item.title}
-                // leftIcon={{ name: item.icon, color: '#373D3F'}}
-                leftIcon={{type: item.type, name: item.icon, color: '#373D3F', size: 20}}
-                />
+                leftIcon={{type: item.type, name: item.icon, color: '#373D3F', size: 20,}}
+                onPress={() => props.nav.navigate('Collection', {genreName: item.genre})}
+                // onPress={() => console.log(item.text)}
+              />
             ))
           }
           </View>

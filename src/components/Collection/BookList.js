@@ -14,9 +14,10 @@ const BookList = (props) => {
   const [page, setPage] = useState('');
   const [genre, setGenre] = useState('');
 
-  // console.log(props.genreId)
+  // Print when get data from db
+  console.log(props.genreName)
 
-  // let genreParams = props.genreId;
+  let genreParams = props.genreName;
 
   const getBooks = () => {
     axios({
@@ -37,13 +38,14 @@ const BookList = (props) => {
       });
   };
 
-  // useEffect(() => {
-  //   setGenre(genreParams)
-  // }, [genreParams])
+  useEffect(() => {
+    setGenre(genreParams)
+  }, [genreParams])
 
   useEffect(() => {
     getBooks()
   }, [search, status, page, genre]) // jika terjadi perubahan pada search, status, page, genre
+ 
 
   return (
     <>

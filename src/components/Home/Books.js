@@ -22,7 +22,7 @@ const Books = (props) => {
         search: search,
         status: status,
         page: page,
-        genre: genre,
+        genre: genre, // classic, biography, etc
       },
     })
       .then((res) => {
