@@ -2,7 +2,7 @@ CRUD:
 
 # Profile
 - Use realtime profile data (1)
-- Logout
+- Logout (1)
 
 # HOME
 ** Featured
@@ -16,8 +16,8 @@ CRUD:
 # BookDetail
 
 # Bug
-- Error: register harus submit data dua kali
+- Error: register harus submit data dua kali (1)
 
 ---
 
-Convert all axios function into redux
+Convert all axios function into redux (2)
