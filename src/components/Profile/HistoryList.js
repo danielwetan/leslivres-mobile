@@ -5,6 +5,8 @@ import History from './History';
 import {connect} from 'react-redux';
 import {getTransaction} from '../../redux/actions/transaction';
 
+import {Text, View} from 'react-native';
+
 const HistoryList = (props) => {
   const [transactionData, setTransactionData] = useState([]);
 
@@ -33,6 +35,16 @@ const HistoryList = (props) => {
 
   return (
     <>
+    <View>
+    <Text
+          style={{
+            fontSize: 20,
+            fontFamily: 'Quicksand-Bold',
+            color: '#373D3F',
+          }}>
+          History
+        </Text>
+    </View>
       {transactionData.map((data) => {
         return (
           <History

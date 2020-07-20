@@ -13,7 +13,7 @@ import BookList from './BookList';
 const Collection = (props) => {
   return (
     <>
-      <Text
+      {/* <Text
         style={{
           fontFamily: 'Quicksand-SemiBold',
           marginLeft: 20,
@@ -23,7 +23,7 @@ const Collection = (props) => {
           color: '#373D3F',
         }}>
         Sorted by Date added
-      </Text>
+      </Text> */}
       <BookList nav={props.nav} />
     </>
   );

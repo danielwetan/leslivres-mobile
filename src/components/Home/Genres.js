@@ -63,9 +63,13 @@ const Genres = () => {
               contentContainerStyle={{
                 // backgroundColor: 'red'
               }}
+              titleStyle={{
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F'
+              }}
                 key={i}
                 title={item.title}
-                leftIcon={{ name: item.icon, color: 'gray'}}
+                leftIcon={{ name: item.icon, color: '#373D3F'}}
               />
             ))
           }
@@ -73,21 +77,25 @@ const Genres = () => {
           <View style={{
       flex: 1,
     }}>
-          {
+{
           list.map((item, i) => (
-            <ListItem
-            containerStyle={{
-              // backgroundColor: 'lightgray',
-              maxHeight: 45,
-              // maxWidth: 175,
-            }}
-            contentContainerStyle={{
-              // backgroundColor: 'red'
-            }}
-              key={i}
-              title={item.title}
-              leftIcon={{ name: item.icon, color: 'gray'}}
-            />
+              <ListItem
+              containerStyle={{
+                // backgroundColor: 'lightgray',
+                maxHeight: 45,
+                // maxWidth: 175,
+              }}
+              contentContainerStyle={{
+                // backgroundColor: 'red'
+              }}
+              titleStyle={{
+                fontFamily: 'Quicksand-Bold',
+                color: '#373D3F'
+              }}
+                key={i}
+                title={item.title}
+                leftIcon={{ name: item.icon, color: '#373D3F'}}
+              />
             ))
           }
           </View>

@@ -12,19 +12,19 @@ const Register = props => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [role, setRole] = useState('');
+  // const [role, setRole] = useState('2');
 
   const userRegistration = () => {
-    setRole(2)
     const data = {
       username: username,
       full_name: fullName,
       email: email,
       password: password,
-      role: role
+      role: '2'
     }
     props.dispatch(register(data))
       .then(() => {
+
         console.log('Register success!')
         props.nav.navigate('Login')
       })

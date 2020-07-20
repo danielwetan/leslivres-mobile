@@ -6,22 +6,23 @@ module.exports = {
   },
   detail: {
     marginLeft: 20,
-    marginRight: 20,
+    marpaddiginRight: 20,
+    maxWidth: 200,
   },
   bookTitle: {
-    fontSize: 24,
+    fontSize: 20,
     fontFamily: 'Quicksand-Bold',
   },
   bookGenre: {
-    fontSize: 18,
+    fontSize: 16,
     fontFamily: 'Quicksand-Medium',
   },
   bookAuthor: {
-    fontSize: 18,
+    fontSize: 16,
     fontFamily: 'Quicksand-Medium',
   },
   borrowButton: {
-    marginTop: 50,
+    marginTop: 20,
     color: 'red',
   },
   description: {
