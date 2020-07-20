@@ -16,7 +16,7 @@ const Home = ({navigation}) => {
       <SafeAreaView style={{backgroundColor: 'white'}}>
         <ScrollView showsVerticalScrollIndicator={false}>
           <TopMenu nav={navigation} />
-          <Search />
+          <Search nav={navigation} />
           <Featured nav={navigation} />
           {/* <Authors nav={navigation} /> */}
           <Genres nav={navigation} />

@@ -18,6 +18,7 @@ const BookList = (props) => {
   console.log(props.genreName)
 
   let genreParams = props.genreName;
+  let searchParams = props.search;
 
   const getBooks = () => {
     axios({
@@ -40,7 +41,8 @@ const BookList = (props) => {
 
   useEffect(() => {
     setGenre(genreParams)
-  }, [genreParams])
+    setSearch(searchParams);
+  }, [genreParams, searchParams])
 
   useEffect(() => {
     getBooks()

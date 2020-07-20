@@ -9,7 +9,6 @@ CRUD:
 - Display featured book data (5 books) (0.5)
 
 # Collection
-- Sort Book by genre (1)
 - Search (1)
 
 # BookDetail
@@ -22,4 +21,4 @@ CRUD:
 # Bug
 ---
 
-Convert all axios function into redux (2)
+Convert all axios function into redux (2

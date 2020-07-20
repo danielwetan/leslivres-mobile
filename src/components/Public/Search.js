@@ -1,34 +1,31 @@
 /* eslint-disable react-native/no-inline-styles */
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {SearchBar} from 'react-native-elements';
 import {View} from 'react-native';
 
 import style from '../../styles/Public/Search';
 
-export default class App extends React.Component {
-  state = {
-    search: '',
-  };
+const Search = (props) => {
+  const [search, setSearch] = useState('');
 
-  updateSearch = (search) => {
-    this.setState({search});
+  const updateSearch = (search) => {
+    setSearch(search)
   };
-
-  render() {
-    const {search} = this.state;
 
     return (
       <View style={style.container}>
         <SearchBar
           placeholder="What are you looking for?"
-          onChangeText={this.updateSearch}
+          onChangeText={updateSearch}
           value={search}
           containerStyle={style.searchBarContainer}
           inputContainerStyle={style.searchBarInputContainer}
           inputStyle={style.searchBarInput}
           searchIcon={style.searchIcon}
+          onSubmitEditing={() =>props.nav.navigate('Collection', {search: search})}
         />
       </View>
     );
   }
-}
+
+export default Search;

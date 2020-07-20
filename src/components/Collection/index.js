@@ -11,8 +11,7 @@ import img2 from '../../assets/images/catching-fire.jpg';
 import BookList from './BookList';
 
 const Collection = (props) => {
-  const {genreName} = props.route.params;
-
+  const {genreName, search} = props.route.params;
   return (
     <>
       {/* <Text
@@ -26,7 +25,7 @@ const Collection = (props) => {
         }}>
         Sorted by Date added
       </Text> */}
-      <BookList nav={props.nav} genreName={genreName}/>
+      <BookList nav={props.nav} genreName={genreName} search={search}/>
     </>
   );
 };
