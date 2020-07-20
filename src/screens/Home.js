@@ -19,7 +19,7 @@ const Home = ({navigation}) => {
           <Search />
           <Featured nav={navigation} />
           {/* <Authors nav={navigation} /> */}
-          <Genres />
+          <Genres nav={navigation} />
           <Books nav={navigation} />
         </ScrollView>
       </SafeAreaView>

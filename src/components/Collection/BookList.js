@@ -14,6 +14,10 @@ const BookList = (props) => {
   const [page, setPage] = useState('');
   const [genre, setGenre] = useState('');
 
+  // console.log(props.genreId)
+
+  // let genreParams = props.genreId;
+
   const getBooks = () => {
     axios({
       method: 'GET',
@@ -32,16 +36,14 @@ const BookList = (props) => {
         console.log(err.response);
       });
   };
+
   // useEffect(() => {
-  //   setGenre(genreParams);
-  //   setPage(pageParams);
-  //   setStatus(statusParams);
-  //   setSearch(searchParams);
-  // }, [genreParams, pageParams, statusParams, searchParams]);
+  //   setGenre(genreParams)
+  // }, [genreParams])
 
   useEffect(() => {
-    getBooks();
-  }, []); // jika terjadi perubahan pada search, status, page, genre
+    getBooks()
+  }, [search, status, page, genre]) // jika terjadi perubahan pada search, status, page, genre
 
   return (
     <>

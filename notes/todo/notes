@@ -9,7 +9,6 @@ CRUD:
 - Display featured book data (5 books) (0.5)
 
 # Collection
-- Sort data by ASC or DESC (0.5)
 - Sort Book by author / genre (1)
 - Search, sort, pagination, etc (2)
 
