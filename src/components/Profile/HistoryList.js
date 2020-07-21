@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Axios from 'axios';
 import History from './History';
-
 import {connect} from 'react-redux';
 import {getTransaction} from '../../redux/actions/transaction';
 
@@ -10,10 +9,12 @@ import {Text, View} from 'react-native';
 const HistoryList = (props) => {
   const [transactionData, setTransactionData] = useState([]);
 
+  let id = props.auth.data.id
+
   const getTransactionData = () => {
     Axios({
       method: 'GET',
-      url: 'http://192.168.43.186:3000/' + 'transaction/1',
+      url: 'http://192.168.43.186:3000/' + 'transaction/' + id,
     })
       // props
       //   .dispatch(getTransaction())
@@ -29,7 +30,7 @@ const HistoryList = (props) => {
 
   useEffect(() => {
     getTransactionData();
-  }, []);
+  }, [id]);
 
   return (
     <>
@@ -62,6 +63,7 @@ const HistoryList = (props) => {
 
 const mapStateToProps = (state) => ({
   transaction: state.transaction,
+  auth: state.auth
 });
 
 export default connect(mapStateToProps)(HistoryList);
