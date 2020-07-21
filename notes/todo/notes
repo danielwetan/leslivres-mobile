@@ -17,11 +17,10 @@ CRUD:
 - Improve UI (1)
 
 # Login Register
-- Response modal when success (1)
 - Improve UI (1)
 
 # Bug
-- Error when   access collection without genre data 
+- Error when access collection without genre data 
 
 ---
 Convert all axios function into redux (2)

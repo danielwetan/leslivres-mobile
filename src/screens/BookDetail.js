@@ -28,8 +28,6 @@ const BookDetail = ({route, navigation}) => {
     getBookData();
   }, [id]);
 
-  console.log(bookData[0]);
-
   return (
     <>
       <SafeAreaView style={{backgroundColor: 'white', flex: 1}}>

@@ -50,24 +50,29 @@ const Login = (props) => {
         <Input
           onChangeText={(text) => setPassword(text)}
           placeholder="Password"
+          secureTextEntry={true}
         />
         <Button onPress={userLogin} title="Login" />
         <Modal isVisible={isModalVisible}>
           <View style={{ 
             backgroundColor: 'white', 
-            height: 100, 
+            height: 80, 
             borderRadius: 10,
             alignItems: 'center',
             justifyContent: 'center',
             }}>
-              <View>
+              <View style={{
+                flexDirection: 'row',
+              }}>
             <Text style={{
               fontFamily: 'Quicksand-Bold',
               fontSize: 18,
+              marginRight: 5,
             }}>Login Success!</Text>
             <Text style={{
               fontFamily: 'Quicksand-Bold',
               fontSize: 18,
+              color: 'blue',
             }} onPress={() => props.nav.navigate('Home')}>Ok</Text>
             </View>
             {/* <Text

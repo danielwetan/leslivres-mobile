@@ -5,7 +5,12 @@ import styles from './syles';
 import {Image} from 'react-native-elements';
 import img from '../../assets/images/harry-potter.jpg';
 
+import { connect } from "react-redux";
+
+
+
 const Profile = (props) => {
+  // console.log("Hello", props.auth.data.full_name)
   return (
     <>
       <View style={styles.profile}>
@@ -18,12 +23,16 @@ const Profile = (props) => {
             overflow: 'hidden',
           }}
         />
-        <Text style={styles.username}>{props.username}</Text>
-        <Text style={styles.name}>{props.fullName}</Text>
-        <Text style={(styles.email, {marginBottom: 10})}>{props.email}</Text>
+        <Text style={styles.username}>{props.auth.data.username}</Text>
+        <Text style={styles.name}>{props.auth.data.full_name}</Text>
+        <Text style={(styles.email, {marginBottom: 10})}>{props.auth.data.email}</Text>
       </View>
     </>
   );
 };
 
-export default Profile;
+const mapStateToProps = state => ({
+  auth: state.auth,
+});
+
+export default connect(mapStateToProps)(Profile)

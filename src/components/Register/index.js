@@ -7,12 +7,20 @@ import styles from './styles';
 import { connect } from 'react-redux';
 import { register } from '../../redux/actions/auth';
 
+import Modal from 'react-native-modal';
+
+
 const Register = props => {
   const [username, setUsername] = useState('');
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   // const [role, setRole] = useState('2');
+
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const toggleModal = () => {
+    setIsModalVisible(false)
+  };
 
   const userRegistration = () => {
     const data = {
@@ -24,9 +32,9 @@ const Register = props => {
     }
     props.dispatch(register(data))
       .then(() => {
-
         console.log('Register success!')
-        props.nav.navigate('Login')
+        setIsModalVisible(true)
+        // props.nav.navigate('Login')
       })
       .catch((err) => {
         console.log(err)
@@ -46,8 +54,39 @@ const Register = props => {
         <Input onChangeText={text => setEmail(text)} placeholder="email@example.com" />
 
         <Text style={styles.title}>Password</Text>
-        <Input onChangeText={text => setPassword(text)} placeholder="Password" />
+        <Input onChangeText={text => setPassword(text)} placeholder="Password" secureTextEntry={true} />
         <Button onPress={userRegistration} title="Register" />
+
+        <Modal isVisible={isModalVisible}>
+          <View style={{ 
+            backgroundColor: 'white', 
+            height: 80, 
+            borderRadius: 10,
+            alignItems: 'center',
+            justifyContent: 'center',
+            }}>
+              <View style={{
+                flexDirection: 'row',
+              }}>
+            <Text style={{
+              fontFamily: 'Quicksand-Bold',
+              fontSize: 18,
+              marginRight: 5,
+            }}>Register Success!.</Text>
+            <Text style={{
+              fontFamily: 'Quicksand-Bold',
+              fontSize: 18,
+              color: 'blue',
+            }} onPress={() => props.nav.navigate('Login')}>Login</Text>
+            </View>
+            {/* <Text
+            style={{
+              fontFamily: 'Quicksand-Bold',
+              fontSize: 18,
+            }}
+            >Login Success!</Text> */}
+          </View>
+        </Modal>
       </View>
     </>
   );
