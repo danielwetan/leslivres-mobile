@@ -7,9 +7,17 @@ import styles from './styles';
 import {connect} from 'react-redux';
 import {login} from '../../redux/actions/auth';
 
+import Modal from 'react-native-modal';
+
+
 const Login = (props) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const toggleModal = () => {
+    setIsModalVisible(false)
+  };
 
   const userLogin = () => {
     const data = {
@@ -20,8 +28,9 @@ const Login = (props) => {
       .dispatch(login(data))
       // .then(() => (console.log(props.auth.isError)))
       .then(() => {
+        setIsModalVisible(true)
         console.log('Login success!');
-        props.nav.navigate('Home');
+        // props.nav.navigate('Home');
       })
       .catch((err) => {
         console.log('Username or password is wrong. Message:', err);
@@ -43,6 +52,32 @@ const Login = (props) => {
           placeholder="Password"
         />
         <Button onPress={userLogin} title="Login" />
+        <Modal isVisible={isModalVisible}>
+          <View style={{ 
+            backgroundColor: 'white', 
+            height: 100, 
+            borderRadius: 10,
+            alignItems: 'center',
+            justifyContent: 'center',
+            }}>
+              <View>
+            <Text style={{
+              fontFamily: 'Quicksand-Bold',
+              fontSize: 18,
+            }}>Login Success!</Text>
+            <Text style={{
+              fontFamily: 'Quicksand-Bold',
+              fontSize: 18,
+            }} onPress={() => props.nav.navigate('Home')}>Ok</Text>
+            </View>
+            {/* <Text
+            style={{
+              fontFamily: 'Quicksand-Bold',
+              fontSize: 18,
+            }}
+            >Login Success!</Text> */}
+          </View>
+        </Modal>
       </View>
     </>
   );
