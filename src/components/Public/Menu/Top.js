@@ -13,13 +13,15 @@ const TopMenu = (props) => {
         style={{
           marginLeft: 10,
           marginRight: 10,
+          backgroundColor: '#303960',
         }}>
         <Header
+
           leftComponent={
             <Icon
               name="list"
               type="entypo"
-              color="#373D3F"
+              color="white"
               // onPress={() => props.nav.openDrawer()}
               onPress={openDrawer}
             />
@@ -42,12 +44,13 @@ const TopMenu = (props) => {
           rightComponent={
             <Icon
               name="account-circle"
-              color="#373D3F"
+              color="white"
               onPress={() => props.nav.navigate('Profile')}
             />
           }
           containerStyle={{
-            backgroundColor: '#fff',
+            backgroundColor: '#303960',
+            borderBottomColor: '#303960'
           }}
         />
       </View>

@@ -21,6 +21,9 @@ const Search = (props) => {
   };
 
   return (
+    <View style={{
+      backgroundColor: '#303960',
+    }}>
     <View style={style.container}>
       <SearchBar
         placeholder="What are you looking for?"
@@ -36,6 +39,7 @@ const Search = (props) => {
         }
         clearIcon={false}
       />
+    </View>
     </View>
   );
 };
