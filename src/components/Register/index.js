@@ -32,9 +32,7 @@ const Register = props => {
     }
     props.dispatch(register(data))
       .then(() => {
-        console.log('Register success!')
         setIsModalVisible(true)
-        // props.nav.navigate('Login')
       })
       .catch((err) => {
         console.log(err)

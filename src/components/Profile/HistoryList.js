@@ -31,8 +31,6 @@ const HistoryList = (props) => {
     getTransactionData();
   }, []);
 
-  console.log('hello');
-
   return (
     <>
     <View>

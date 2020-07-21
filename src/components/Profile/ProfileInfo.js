@@ -4,10 +4,7 @@ import {View, Text} from 'react-native';
 import styles from './syles';
 import {Image} from 'react-native-elements';
 import img from '../../assets/images/harry-potter.jpg';
-
 import { connect } from "react-redux";
-
-
 
 const Profile = (props) => {
   // console.log("Hello", props.auth.data.full_name)

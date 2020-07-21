@@ -15,7 +15,7 @@ const BookList = (props) => {
   const [genre, setGenre] = useState('');
 
   // Print when get data from db
-  console.log(props.genreName)
+  // console.log(props.genreName)
 
   let genreParams = props.genreName;
   let searchParams = props.search;

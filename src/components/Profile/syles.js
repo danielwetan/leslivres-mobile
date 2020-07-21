@@ -15,7 +15,6 @@ module.exports = {
   },
   name: {
     fontSize: 20,
-    marginTop: 10,
     fontFamily: 'Quicksand-Bold',
   },
   email: {

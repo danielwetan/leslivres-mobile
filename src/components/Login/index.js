@@ -29,7 +29,7 @@ const Login = (props) => {
       // .then(() => (console.log(props.auth.isError)))
       .then(() => {
         setIsModalVisible(true)
-        console.log('Login success!');
+        // console.log('Login success!');
         // props.nav.navigate('Home');
       })
       .catch((err) => {
