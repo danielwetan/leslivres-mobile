@@ -25,7 +25,7 @@ const Collection = (props) => {
         }}>
         Sorted by Date added
       </Text> */}
-      <BookList nav={props.nav} genreName={genreName} search={search}/>
+      <BookList nav={props.nav} genreName={genreName} search={search} />
     </>
   );
 };

@@ -3,13 +3,15 @@ CRUD:
 # Profile
 - Use realtime profile data (1)
 - Logout (1)
+- Improve UI (1)
 
 # HOME
 ** Featured
 - Display featured book data (5 books) (0.5)
+- Improve UI (2)
 
 # Collection
-- Search (1)
+- Improve UI (1)
 
 # BookDetail
 - Improve UI (1)
@@ -19,6 +21,7 @@ CRUD:
 - Improve UI (1)
 
 # Bug
----
+- Remove text from search bar after submit data
 
-Convert all axios function into redux (2
+---
+Convert all axios function into redux (2)

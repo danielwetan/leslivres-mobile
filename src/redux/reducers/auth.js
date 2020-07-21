@@ -28,6 +28,13 @@ const auth = (state = initialState, action) => {
         isError: false,
         data: action.payload.data.body[0],
       };
+    case 'LOGOUT':
+      return {
+        isLoading: false,
+        isError: false,
+        errorMsg: '',
+        data: {},
+      };
     //// REGISTER
     case 'REGISTER_PENDING':
       return {
