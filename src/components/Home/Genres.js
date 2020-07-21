@@ -56,7 +56,7 @@ const Genres = (props) => {
         }}>
         <Text
           style={{
-            fontSize: 18,
+            fontSize: 22,
             fontFamily: 'Quicksand-Bold',
             color: '#373D3F',
           }}>

@@ -5,12 +5,12 @@ module.exports = {
     marginRight: 15,
   },
   searchBarContainer: {
-    backgroundColor: '#303960',
-    borderTopColor: '#303960',
-    borderBottomColor: '#303960',
+    backgroundColor: '#fff',
+    borderTopColor: '#fff',
+    borderBottomColor: '#fff',
   },
   searchBarInputContainer: {
-    backgroundColor: 'white',
+    backgroundColor: 'lightgray',
   },
   searchBarInput: {
     fontSize: 15,

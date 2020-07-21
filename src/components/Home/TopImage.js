@@ -9,17 +9,18 @@ const TopImage = () => {
     <>
       <View style={{
         flex: 1,
-        backgroundColor: '#303960',
-        borderBottomEndRadius: 80,
-        // borderBottomStartRadius: 80,
+        backgroundColor: '#162447',
+        borderBottomEndRadius: 50,
+        borderBottomStartRadius: 50,
         }}>
       <Image
           source={img}
           style={{
-            marginTop: -110,
+            marginTop: -130,
             height: 250,
             overflow: 'hidden',
-            borderBottomRightRadius: 80,
+            borderRadius: 50,
+            // borderBottomRightRadius: 50,
           }}
         />
       </View>
