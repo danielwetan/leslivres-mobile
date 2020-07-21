@@ -10,7 +10,7 @@ const Profile = ({navigation}) => {
     <>
       <SafeAreaView style={{backgroundColor: 'white', flex: 1}}>
         <TopMenu nav={navigation} />
-        <Main />
+        <Main nav={navigation} />
       </SafeAreaView>
     </>
   );

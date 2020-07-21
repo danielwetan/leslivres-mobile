@@ -30,7 +30,7 @@ const HistoryList = (props) => {
 
   useEffect(() => {
     getTransactionData();
-  }, [id]);
+  }, [id]); // update data when user id changes
 
   return (
     <>
