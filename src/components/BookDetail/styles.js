@@ -12,18 +12,28 @@ module.exports = {
   bookTitle: {
     fontSize: 20,
     fontFamily: 'Quicksand-Bold',
+    marginBottom: 10,
   },
   bookGenre: {
-    fontSize: 16,
-    fontFamily: 'Quicksand-Medium',
+    fontSize: 17,
+    fontFamily: 'Quicksand-Bold',
+    color: '#004380',
   },
   bookAuthor: {
+    fontSize: 17,
+    fontFamily: 'Quicksand-Bold',
+    color: 'gray',
+  },
+  bookStatus: {
     fontSize: 16,
     fontFamily: 'Quicksand-Medium',
   },
-  borrowButton: {
+  borrowButtonContainer: {
     marginTop: 20,
+  },
+  borrowButton: {
     color: 'red',
+    backgrounColor: 'green',
   },
   description: {
     marginTop: 20,

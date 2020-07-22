@@ -30,8 +30,10 @@ const Profile = (props) => {
         /> */}
         <Text style={styles.username}>{props.auth.data.username}</Text>
         <Text style={styles.name}>{props.auth.data.full_name}</Text>
-        <Text style={(styles.email, {marginBottom: 10})}>{props.auth.data.email}</Text>
-        <Button title="Logout" onPress={() => logout()} />
+        <Text style={styles.email}>{props.auth.data.email}</Text>
+        <Button buttonStyle={{backgroundColor: '#004380'}} titleStyle={{fontFamily: 'Quicksand-Bold', fontSize: 16,}} title="Logout" onPress={() => logout()} />
+
+        {/* <Button title="Logout" buttonStyle={{backgroundColor: '#004380'}} titleStyle={{fontFamily: 'Quicksand-Bold', fontSize: 18,}} onPress={() => logout()} /> */}
       </View>
     </>
   );

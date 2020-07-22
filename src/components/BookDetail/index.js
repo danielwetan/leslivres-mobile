@@ -1,11 +1,13 @@
 /* eslint-disable react-native/no-inline-styles */
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {View, Text} from 'react-native';
 import styles from './styles';
 import img from '../../assets/images/harry-potter.jpg';
 import {Image, Button} from 'react-native-elements';
 
 const BookDetail = (props) => {
+
+
   return (
     <>
       <View style={styles.container}>
@@ -25,9 +27,9 @@ const BookDetail = (props) => {
             <Text style={styles.bookTitle}>{props.title}</Text>
             <Text style={styles.bookGenre}>{props.genre}</Text>
             <Text style={styles.bookAuthor}>{props.author}</Text>
-            <Text style={styles.bookAuthor}>{props.status}</Text>
-            <View style={styles.borrowButton}>
-              <Button title="borrow" />
+            <Text style={styles.bookStatus}>{props.status}</Text>
+            <View style={styles.borrowButtonContainer}>
+              <Button buttonStyle={{backgroundColor: '#004380'}} titleStyle={{fontFamily: 'Quicksand-Bold', fontSize: 16,}} title="Borrow" />
             </View>
           </View>
         </View>
