@@ -8,7 +8,7 @@ import Register from './src/screens/Register';
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-
+import {View} from 'react-native';
 import {Provider} from 'react-redux';
 import storage from './src/redux/store';
 import {PersistGate} from 'redux-persist/integration/react';
@@ -21,7 +21,13 @@ export default function App() {
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <NavigationContainer>
-          <Drawer.Navigator>
+          {/* <View> */}
+          <Drawer.Navigator 
+          drawerContentOptions={{
+            activeTintColor: '#e91e63',
+            labelStyle: { fontFamily: 'Quicksand-Bold' },
+          }}
+          >
             <Drawer.Screen name="Home" component={Home} />
             <Drawer.Screen name="Profile" component={Profile} />
             <Drawer.Screen name="Collection" component={Collection} />
@@ -29,6 +35,7 @@ export default function App() {
             <Drawer.Screen name="Login" component={Login} />
             <Drawer.Screen name="Register" component={Register} />
           </Drawer.Navigator>
+          {/* </View> */}
         </NavigationContainer>
       </PersistGate>
     </Provider>

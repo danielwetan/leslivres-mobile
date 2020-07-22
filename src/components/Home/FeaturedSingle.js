@@ -47,7 +47,7 @@ const FeaturedSingle = (props) => {
               style={{
                 fontSize: 12,
                 fontFamily: 'Quicksand-Bold',
-                color: '#373D3F',
+                color: 'gray',
               }}>
               {props.author}
             </Text>
