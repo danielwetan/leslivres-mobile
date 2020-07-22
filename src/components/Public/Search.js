@@ -38,6 +38,6 @@ const Search = (props) => {
       />
     </View>
   );
-};
+};  
 
 export default Search;

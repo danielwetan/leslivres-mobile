@@ -9,7 +9,6 @@ import { register } from '../../redux/actions/auth';
 
 import Modal from 'react-native-modal';
 
-
 const Register = props => {
   const [username, setUsername] = useState('');
   const [fullName, setFullName] = useState('');
@@ -43,17 +42,25 @@ const Register = props => {
     <>
       <View style={styles.container}>
         <Text style={styles.title}>Username</Text>
-        <Input onChangeText={text => setUsername(text)} placeholder="Username" />
+        <Input onChangeText={text => setUsername(text)} placeholder="Username"           inputStyle={{
+            fontFamily: 'Quicksand-Bold',
+          }} />
 
-        <Text style={styles.body}>Full Name</Text>
-        <Input onChangeText={text => setFullName(text)} placeholder="John Doe" />
+        <Text style={styles.title}>Full Name</Text>
+        <Input onChangeText={text => setFullName(text)} placeholder="John Doe"           inputStyle={{
+            fontFamily: 'Quicksand-Bold',
+          }} />
 
         <Text style={styles.title}>Email</Text>
-        <Input onChangeText={text => setEmail(text)} placeholder="email@example.com" />
+        <Input onChangeText={text => setEmail(text)} placeholder="email@example.com"           inputStyle={{
+            fontFamily: 'Quicksand-Bold',
+          }} />
 
         <Text style={styles.title}>Password</Text>
-        <Input onChangeText={text => setPassword(text)} placeholder="Password" secureTextEntry={true} />
-        <Button onPress={userRegistration} title="Register" />
+        <Input onChangeText={text => setPassword(text)} placeholder="Password" secureTextEntry={true}           inputStyle={{
+            fontFamily: 'Quicksand-Bold',
+          }} />
+        <Button onPress={userRegistration} title="Register" titleStyle={{fontFamily: 'Quicksand-Bold'}} />
 
         <Modal isVisible={isModalVisible}>
           <View style={{ 

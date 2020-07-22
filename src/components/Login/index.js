@@ -44,6 +44,9 @@ const Login = (props) => {
         <Input
           onChangeText={(text) => setUsername(text)}
           placeholder="Username"
+          inputStyle={{
+            fontFamily: 'Quicksand-Bold',
+          }}
         />
 
         <Text style={styles.title}>Password</Text>
@@ -51,8 +54,11 @@ const Login = (props) => {
           onChangeText={(text) => setPassword(text)}
           placeholder="Password"
           secureTextEntry={true}
+          inputStyle={{
+            fontFamily: 'Quicksand-Bold',
+          }}
         />
-        <Button onPress={userLogin} title="Login" />
+        <Button onPress={userLogin} title="Login" titleStyle={{fontFamily: 'Quicksand-Bold'}} />
         <Modal isVisible={isModalVisible}>
           <View style={{ 
             backgroundColor: 'white', 

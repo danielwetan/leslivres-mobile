@@ -6,7 +6,7 @@ module.exports = {
   },
   title: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontFamily: 'Quicksand-Bold',
     marginLeft: 10,
     color: 'gray',
   },

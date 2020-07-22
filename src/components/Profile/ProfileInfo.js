@@ -19,7 +19,7 @@ const Profile = (props) => {
   return (
     <>
       <View style={styles.profile}>
-        <Image
+        {/* <Image
           source={img}
           style={{
             width: 100,
@@ -27,7 +27,7 @@ const Profile = (props) => {
             borderRadius: 50,
             overflow: 'hidden',
           }}
-        />
+        /> */}
         <Text style={styles.username}>{props.auth.data.username}</Text>
         <Text style={styles.name}>{props.auth.data.full_name}</Text>
         <Text style={(styles.email, {marginBottom: 10})}>{props.auth.data.email}</Text>
