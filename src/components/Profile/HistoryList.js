@@ -37,9 +37,11 @@ const HistoryList = (props) => {
     <View>
     <Text
           style={{
-            fontSize: 20,
+            fontSize: 18,
             fontFamily: 'Quicksand-Bold',
             color: '#373D3F',
+            marginTop: 20,
+            marginBottom: 10,
           }}>
           History
         </Text>

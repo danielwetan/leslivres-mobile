@@ -8,8 +8,6 @@ import { connect } from "react-redux";
 import {logout} from '../../redux/actions/auth';
 
 const Profile = (props) => {
-  // console.log("Hello", props.auth.data.full_name)
-
   const logout = () => {
     props.logout();
     console.log("Logout success!")
@@ -18,23 +16,19 @@ const Profile = (props) => {
 
   return (
     <>
-      <View style={styles.profile}>
-        {/* <Image
-          source={img}
-          style={{
-            width: 100,
-            height: 100,
-            borderRadius: 50,
-            overflow: 'hidden',
-          }}
-        /> */}
-        <Text style={styles.username}>{props.auth.data.username}</Text>
+      <View style={{
+        alignItems: 'center', 
+        marginTop: 10, 
+        paddingBottom: 20,
+        borderBottomColor: 'gray',
+        borderBottomWidth: 1,
+        }}>
         <Text style={styles.name}>{props.auth.data.full_name}</Text>
         <Text style={styles.email}>{props.auth.data.email}</Text>
-        <Button buttonStyle={{backgroundColor: '#004380'}} titleStyle={{fontFamily: 'Quicksand-Bold', fontSize: 16,}} title="Logout" onPress={() => logout()} />
+        <Button buttonStyle={{backgroundColor: '#004380', width: 100,}} titleStyle={{fontFamily: 'Quicksand-Bold', fontSize: 16,}} title="Logout" onPress={() => logout()} />
+      </View>
 
         {/* <Button title="Logout" buttonStyle={{backgroundColor: '#004380'}} titleStyle={{fontFamily: 'Quicksand-Bold', fontSize: 18,}} onPress={() => logout()} /> */}
-      </View>
     </>
   );
 };

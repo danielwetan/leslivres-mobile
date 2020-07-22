@@ -5,7 +5,7 @@ module.exports = {
     marginTop: 10,
   },
   profile: {
-    alignItems: 'center',
+    // alignItems: 'center',
   },
   username: {
     marginTop: 10,
@@ -16,6 +16,7 @@ module.exports = {
   name: {
     fontSize: 20,
     fontFamily: 'Quicksand-Bold',
+    color: '#373D3F',
   },
   email: {
     fontSize: 16,
@@ -25,8 +26,8 @@ module.exports = {
 
   },
   history: {
-    marginTop: 20,
-    fontSize: 16,
+    paddingnTop: 50,
+    fontSize: 18,
     fontFamily: 'Quicksand-Bold',
   },
 };

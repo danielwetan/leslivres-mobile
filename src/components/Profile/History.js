@@ -15,10 +15,24 @@ const History = (props) => {
 
   return (
     <>
-      <View>
-        <Text>
-          {props.book} | {status}
+      <View style={{
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+      }}>
+        <Text style={{
+          fontSize: 16, 
+          fontFamily: 'Quicksand-Bold',
+          }}>
+          {props.book}
         </Text>
+        <Text style={{
+          fontSize: 14, 
+          fontFamily: 'Quicksand-Bold',
+          color: 'gray',
+          marginBottom: 10,
+          }}>
+          {status}
+          </Text>
       </View>
     </>
   );

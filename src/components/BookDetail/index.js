@@ -7,6 +7,9 @@ import {Image, Button} from 'react-native-elements';
 
 const BookDetail = (props) => {
 
+  const Borrow = () => {
+    return 'hello'
+  }
 
   return (
     <>
