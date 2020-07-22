@@ -12,14 +12,16 @@ Main color: #1e4380
 
 # BookDetail
 - Improve UI (1)
-- Borrow feature
 
 # Login Register
 - Improve UI (1)
 
-# Bug
+# Bug & Others
 - Error when access collection without genre data => react navigation
+- Remove borrow button after borrow book
+- Reset data when login / register success
+- Scroll View render next element (1)
+- Update database (1)
 
-
----
+# Additional
 Convert all axios function into redux (2)

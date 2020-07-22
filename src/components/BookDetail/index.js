@@ -2,14 +2,40 @@
 import React, {useState, useEffect} from 'react';
 import {View, Text} from 'react-native';
 import styles from './styles';
-import img from '../../assets/images/harry-potter.jpg';
 import {Image, Button} from 'react-native-elements';
+import { connect } from "react-redux";
+import Axios from 'axios';
 
 const BookDetail = (props) => {
 
+  const [userId, setUserId] = useState('');
+  const [bookId, setBookId] = useState('');
+
   const Borrow = () => {
-    return 'hello'
+    Axios({
+      method: 'POST',
+      url: 'http://192.168.43.186:3000/transaction',
+      data: {
+        user: userId,
+        book: bookId,
+        status: 1,
+      },
+      headers: {
+        Authorization: props.auth.data.mainToken
+      }
+    })
+    .then(() => {
+      console.log('Borrow success!')
+    })
+    .catch((err) => {
+      console.log(err.response.data.body)
+    })
   }
+
+  useEffect(() => {
+    setUserId(props.auth.data.id)
+    setBookId(props.id)
+  }, [])
 
   return (
     <>
@@ -32,7 +58,7 @@ const BookDetail = (props) => {
             <Text style={styles.bookAuthor}>{props.author}</Text>
             <Text style={styles.bookStatus}>{props.status}</Text>
             <View style={styles.borrowButtonContainer}>
-              <Button buttonStyle={{backgroundColor: '#004380'}} titleStyle={{fontFamily: 'Quicksand-Bold', fontSize: 16,}} title="Borrow" />
+              <Button buttonStyle={{backgroundColor: '#004380'}} titleStyle={{fontFamily: 'Quicksand-Bold', fontSize: 16,}} title="Borrow" onPress={() => Borrow()} />
             </View>
           </View>
         </View>
@@ -45,4 +71,8 @@ const BookDetail = (props) => {
   );
 };
 
-export default BookDetail;
+const mapStateToProps = state => ({
+  auth: state.auth,
+});
+
+export default connect(mapStateToProps)(BookDetail)
