@@ -43,6 +43,7 @@ const BookDetail = ({route, navigation}) => {
               img={data.img}
               status={data.status}
               title={data.title}
+              // nav={navigation}
             />
           );
         })}

@@ -58,7 +58,7 @@ const Login = (props) => {
             fontFamily: 'Quicksand-Bold',
           }}
         />
-        <Button onPress={userLogin} title="Login" titleStyle={{fontFamily: 'Quicksand-Bold'}} />
+        <Button onPress={() => userLogin()} title="Login" titleStyle={{fontFamily: 'Quicksand-Bold'}} />
         <Modal isVisible={isModalVisible}>
           <View style={{ 
             backgroundColor: 'white', 
@@ -81,12 +81,6 @@ const Login = (props) => {
               color: 'blue',
             }} onPress={() => props.nav.navigate('Home')}>Ok</Text>
             </View>
-            {/* <Text
-            style={{
-              fontFamily: 'Quicksand-Bold',
-              fontSize: 18,
-            }}
-            >Login Success!</Text> */}
           </View>
         </Modal>
       </View>

@@ -6,10 +6,18 @@ import {Image, Button} from 'react-native-elements';
 import { connect } from "react-redux";
 import Axios from 'axios';
 
+import Modal from 'react-native-modal';
+
 const BookDetail = (props) => {
 
   const [userId, setUserId] = useState('');
   const [bookId, setBookId] = useState('');
+  const [showButton, setShowButton] = useState(true)
+
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const toggleModal = () => {
+    setIsModalVisible(false)
+  };
 
   const Borrow = () => {
     Axios({
@@ -26,6 +34,8 @@ const BookDetail = (props) => {
     })
     .then(() => {
       console.log('Borrow success!')
+      setIsModalVisible(true)
+      setShowButton(false)
     })
     .catch((err) => {
       console.log(err.response.data.body)
@@ -58,7 +68,8 @@ const BookDetail = (props) => {
             <Text style={styles.bookAuthor}>{props.author}</Text>
             <Text style={styles.bookStatus}>{props.status}</Text>
             <View style={styles.borrowButtonContainer}>
-              <Button buttonStyle={{backgroundColor: '#004380'}} titleStyle={{fontFamily: 'Quicksand-Bold', fontSize: 16,}} title="Borrow" onPress={() => Borrow()} />
+              {showButton === true ? <Button buttonStyle={{backgroundColor: '#004380'}} titleStyle={{fontFamily: 'Quicksand-Bold', fontSize: 16,}} title="Borrow" onPress={() => Borrow()} /> : null  }
+              {/* <Button buttonStyle={{backgroundColor: '#004380'}} titleStyle={{fontFamily: 'Quicksand-Bold', fontSize: 16,}} title="Borrow" onPress={() => setIsModalVisible(true)} /> */}
             </View>
           </View>
         </View>
@@ -66,6 +77,32 @@ const BookDetail = (props) => {
           <Text style={styles.descriptionTitle}>Description</Text>
           <Text style={styles.descriptionBody}>{props.description}</Text>
         </View>
+
+        <Modal isVisible={isModalVisible}>
+          <View style={{ 
+            backgroundColor: 'white', 
+            height: 80, 
+            borderRadius: 10,
+            alignItems: 'center',
+            justifyContent: 'center',
+            }}>
+              <View style={{
+                flexDirection: 'row',
+              }}>
+            <Text style={{
+              fontFamily: 'Quicksand-Bold',
+              fontSize: 18,
+              marginRight: 5,
+            }}>Borrow Success!</Text>
+            <Text style={{
+              fontFamily: 'Quicksand-Bold',
+              fontSize: 18,
+              color: 'blue',
+            }} onPress={() => setIsModalVisible(false) }>Ok</Text>
+            </View>
+          </View>
+        </Modal>
+
       </View>
     </>
   );
